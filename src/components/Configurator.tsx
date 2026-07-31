@@ -192,19 +192,9 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
           borderBottom: "1px solid #262626",
         }}
       >
-        <div style={{ display: "flex", alignItems: "baseline", gap: 10, minWidth: 0 }}>
-          <span className="wordmark" style={{ fontSize: "1.3rem", color: "#ffffff" }}>
-            grilluxe
-          </span>
+        <div style={{ display: "flex", alignItems: "center", gap: 12, minWidth: 0 }}>
+          <Image src="/brand/grilluxe-logo-white.png" alt="Grilluxe" width={110} height={44} unoptimized style={{ height: 24, width: "auto" }} />
           <span style={{ color: "#8a8a8a", fontSize: "0.82rem", whiteSpace: "nowrap" }}>Küchenkonfigurator</span>
-        </div>
-        <div style={{ textAlign: "right", flexShrink: 0 }}>
-          <div style={{ fontSize: "0.68rem", letterSpacing: "0.09em", textTransform: "uppercase", color: "#8a8a8a" }}>
-            Gesamtpreis
-          </div>
-          <div className="num" style={{ fontSize: "1.25rem", fontWeight: 600, color: "#ffffff" }}>
-            {money.format(totalPrice)}
-          </div>
         </div>
       </header>
 
