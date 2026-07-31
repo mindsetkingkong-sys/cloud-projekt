@@ -87,6 +87,23 @@ export const LED_COLORS: { id: string; label: string; image: string }[] = [
   { id: "green", label: "Grün", image: "/kitchen/led/Glare_Zielony.png" },
 ];
 
+export const LED_PRICE_DELTA = 490;
+
+export type Addon = { id: string; label: string; priceDelta: number };
+
+export const ADDONS: Addon[] = [
+  { id: "audio", label: "Audiosystem", priceDelta: 890 },
+  { id: "grillZubehoer", label: "Grillzubehör-Set", priceDelta: 350 },
+  { id: "besteck", label: "Besteck-Set", priceDelta: 190 },
+  { id: "montage", label: "Montage vor Ort", priceDelta: 1200 },
+];
+
+export const TRANSPORT_FLAT_FEE = 350;
+
+export function isValidPlz(plz: string): boolean {
+  return /^\d{5}$/.test(plz.trim());
+}
+
 export type KitchenFormat = {
   id: string;
   label: string;
@@ -109,11 +126,13 @@ export function findFormat(formatId: string): KitchenFormat | undefined {
   return FORMATS.find((f) => f.id === formatId);
 }
 
-export type Selections = Record<string, string> & { format: string; ledOn: string };
+export type Selections = Record<string, string> & { format: string; ledOn: string; plz: string };
 
 export const DEFAULT_SELECTIONS: Selections = {
   format: DEFAULT_FORMAT,
   ledOn: "off",
+  plz: "",
+  ...Object.fromEntries(ADDONS.map((addon) => [addon.id, "off"])),
   ...Object.fromEntries(CATEGORIES.map((category) => [category.id, category.options[0].id])),
 };
 
@@ -129,5 +148,10 @@ export function calculateTotalPrice(selections: Selections): number {
     const option = findOption(category.id, selections[category.id]);
     if (option) total += option.priceDelta;
   }
+  if (selections.ledOn === "on") total += LED_PRICE_DELTA;
+  for (const addon of ADDONS) {
+    if (selections[addon.id] === "on") total += addon.priceDelta;
+  }
+  if (isValidPlz(selections.plz)) total += TRANSPORT_FLAT_FEE;
   return total;
 }

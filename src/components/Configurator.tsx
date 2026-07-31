@@ -3,19 +3,75 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import {
+  ADDONS,
   BACKGROUND_IMAGE,
   CATEGORIES,
   DEFAULT_SELECTIONS,
   FORMATS,
   KITCHEN_LINE,
   LED_COLORS,
+  LED_PRICE_DELTA,
   Selections,
+  TRANSPORT_FLAT_FEE,
   calculateTotalPrice,
   findFormat,
   findOption,
+  isValidPlz,
 } from "@/lib/product-data";
 
 const money = new Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR", maximumFractionDigits: 0 });
+
+function ToggleRow({
+  label,
+  priceLabel,
+  note,
+  checked,
+  onChange,
+}: {
+  label: string;
+  priceLabel: string;
+  note?: string;
+  checked: boolean;
+  onChange: () => void;
+}) {
+  return (
+    <div style={{ padding: "10px 0", borderTop: "1px solid var(--border)" }}>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10 }}>
+        <span style={{ fontSize: "0.9rem" }}>
+          {label} <span style={{ color: "var(--text-faint)", fontSize: "0.8rem" }}>{priceLabel}</span>
+        </span>
+        <button
+          onClick={onChange}
+          aria-pressed={checked}
+          style={{
+            width: 44,
+            height: 26,
+            borderRadius: 999,
+            border: "1px solid var(--border)",
+            background: checked ? "var(--accent)" : "var(--surface-2)",
+            position: "relative",
+            flexShrink: 0,
+            transition: "background 0.15s ease",
+          }}
+        >
+          <span
+            style={{
+              position: "absolute",
+              top: 2,
+              left: checked ? 20 : 2,
+              width: 20,
+              height: 20,
+              borderRadius: "50%",
+              background: checked ? "var(--accent-ink)" : "var(--text-faint)",
+              transition: "left 0.15s ease",
+            }}
+          />
+        </button>
+      </div>
+      {note && <p style={{ marginTop: 4, fontSize: "0.76rem", color: "var(--text-faint)" }}>{note}</p>}
+    </div>
+  );
+}
 
 type Props = {
   initialSelections?: Selections;
@@ -61,6 +117,11 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
 
   function toggleLed() {
     setSelections((prev) => ({ ...prev, ledOn: prev.ledOn === "on" ? "off" : "on" }));
+    setSavedLink(null);
+  }
+
+  function toggleAddon(addonId: string) {
+    setSelections((prev) => ({ ...prev, [addonId]: prev[addonId] === "on" ? "off" : "on" }));
     setSavedLink(null);
   }
 
@@ -253,39 +314,23 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
           </div>
 
           <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius)", padding: "14px 16px" }}>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-              <span style={{ fontWeight: 600, fontSize: "0.94rem" }}>LED-Ambientelicht</span>
-              <button
-                onClick={toggleLed}
-                aria-pressed={selections.ledOn === "on"}
-                style={{
-                  width: 44,
-                  height: 26,
-                  borderRadius: 999,
-                  border: "1px solid var(--border)",
-                  background: selections.ledOn === "on" ? "var(--accent)" : "var(--surface-2)",
-                  position: "relative",
-                  flexShrink: 0,
-                  transition: "background 0.15s ease",
-                }}
-              >
-                <span
-                  style={{
-                    position: "absolute",
-                    top: 2,
-                    left: selections.ledOn === "on" ? 20 : 2,
-                    width: 20,
-                    height: 20,
-                    borderRadius: "50%",
-                    background: selections.ledOn === "on" ? "var(--accent-ink)" : "var(--text-faint)",
-                    transition: "left 0.15s ease",
-                  }}
-                />
-              </button>
-            </div>
-            <p style={{ marginTop: 6, fontSize: "0.78rem", color: "var(--text-faint)" }}>
-              Wechselt automatisch die Farbe, solange eingeschaltet.
-            </p>
+            <div style={{ fontWeight: 600, fontSize: "0.94rem" }}>Zusatzoptionen</div>
+            <ToggleRow
+              label="LED-Ambientelicht"
+              priceLabel={`+${money.format(LED_PRICE_DELTA)}`}
+              note="Wechselt automatisch die Farbe, solange eingeschaltet."
+              checked={selections.ledOn === "on"}
+              onChange={toggleLed}
+            />
+            {ADDONS.map((addon) => (
+              <ToggleRow
+                key={addon.id}
+                label={addon.label}
+                priceLabel={`+${money.format(addon.priceDelta)}`}
+                checked={selections[addon.id] === "on"}
+                onChange={() => toggleAddon(addon.id)}
+              />
+            ))}
           </div>
 
           {CATEGORIES.map((category) => {
@@ -342,14 +387,20 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
                           >
                             <span
                               style={{
-                                width: 40,
-                                height: 40,
+                                width: 44,
+                                height: 44,
                                 borderRadius: 10,
                                 border: "1px solid var(--shadow)",
-                                background:
-                                  option.swatchColor === "transparent"
-                                    ? "repeating-conic-gradient(var(--border) 0% 25%, transparent 0% 50%) 50% / 8px 8px"
-                                    : option.swatchColor,
+                                backgroundColor:
+                                  option.swatchColor === "transparent" ? undefined : option.swatchColor,
+                                backgroundImage:
+                                  category.id !== "countertops" && option.image
+                                    ? `url(${option.image.replace(/\/([^/]+)\.png$/, "/thumbs/$1.jpg")})`
+                                    : option.swatchColor === "transparent"
+                                      ? "repeating-conic-gradient(var(--border) 0% 25%, transparent 0% 50%) 50% / 8px 8px"
+                                      : undefined,
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
                               }}
                             />
                             <span style={{ fontSize: "0.72rem", textAlign: "center", lineHeight: 1.2 }}>{option.label}</span>
@@ -364,6 +415,30 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
           })}
 
           <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius)", padding: 16 }}>
+            <label style={{ display: "block", fontSize: "0.82rem", color: "var(--text-muted)", marginBottom: 6 }}>
+              Postleitzahl (für Transportkosten)
+            </label>
+            <input
+              value={selections.plz}
+              onChange={(e) => {
+                const value = e.target.value.replace(/[^0-9]/g, "").slice(0, 5);
+                setSelections((prev) => ({ ...prev, plz: value }));
+                setSavedLink(null);
+              }}
+              placeholder="z. B. 80331"
+              inputMode="numeric"
+              style={{ ...inputStyle, width: "100%" }}
+            />
+            {selections.plz && !isValidPlz(selections.plz) && (
+              <p style={{ marginTop: 4, fontSize: "0.76rem", color: "var(--text-faint)" }}>5-stellige PLZ eingeben.</p>
+            )}
+            {isValidPlz(selections.plz) && (
+              <div style={{ display: "flex", justifyContent: "space-between", marginTop: 8, fontSize: "0.85rem", color: "var(--text-muted)" }}>
+                <span>Transportkosten</span>
+                <span className="num">{money.format(TRANSPORT_FLAT_FEE)}</span>
+              </div>
+            )}
+
             <div
               style={{
                 display: "flex",

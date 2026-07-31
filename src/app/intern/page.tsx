@@ -1,5 +1,5 @@
 import { prisma } from "@/lib/prisma";
-import { CATEGORIES, Selections, findFormat, findOption } from "@/lib/product-data";
+import { ADDONS, CATEGORIES, Selections, findFormat, findOption, isValidPlz } from "@/lib/product-data";
 
 export const dynamic = "force-dynamic";
 
@@ -14,6 +14,10 @@ function describeSelections(raw: string): string {
     parts.push(`${category.label}: ${option?.label ?? "–"}`);
   }
   parts.push(`LED-Ambientelicht: ${selections.ledOn === "on" ? "an" : "aus"}`);
+  for (const addon of ADDONS) {
+    if (selections[addon.id] === "on") parts.push(addon.label);
+  }
+  if (isValidPlz(selections.plz)) parts.push(`PLZ: ${selections.plz}`);
   return parts.join(" · ");
 }
 
