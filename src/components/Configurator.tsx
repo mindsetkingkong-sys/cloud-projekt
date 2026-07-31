@@ -73,6 +73,40 @@ function ToggleRow({
   );
 }
 
+function CrossfadeLayer({ src, alt }: { src: string; alt: string }) {
+  const [displayed, setDisplayed] = useState(src);
+  const [incoming, setIncoming] = useState<string | null>(null);
+  const [fadeIn, setFadeIn] = useState(false);
+
+  useEffect(() => {
+    if (src === displayed) return;
+    setIncoming(src);
+    setFadeIn(false);
+    const raf = requestAnimationFrame(() => setFadeIn(true));
+    return () => cancelAnimationFrame(raf);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [src]);
+
+  return (
+    <>
+      <Image src={displayed} alt={alt} fill unoptimized style={{ objectFit: "fill" }} />
+      {incoming && incoming !== displayed && (
+        <Image
+          src={incoming}
+          alt={alt}
+          fill
+          unoptimized
+          style={{ objectFit: "fill", opacity: fadeIn ? 1 : 0, transition: "opacity 350ms ease" }}
+          onTransitionEnd={() => {
+            setDisplayed(incoming);
+            setIncoming(null);
+          }}
+        />
+      )}
+    </>
+  );
+}
+
 type Props = {
   initialSelections?: Selections;
   initialConfigId?: string;
@@ -242,24 +276,13 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
               const option = findOption(category.id, selections[category.id]);
               if (!option?.image) return null;
               return (
-                <Image
-                  key={category.id}
-                  src={option.image}
-                  alt={`${category.label}: ${option.label}`}
-                  fill
-                  unoptimized
-                  style={{ objectFit: "fill" }}
-                />
+                <CrossfadeLayer key={category.id} src={option.image} alt={`${category.label}: ${option.label}`} />
               );
             })}
             {selections.ledOn === "on" && (
-              <Image
-                key={LED_COLORS[ledColorIndex].id}
+              <CrossfadeLayer
                 src={LED_COLORS[ledColorIndex].image}
                 alt={`LED-Ambientelicht: ${LED_COLORS[ledColorIndex].label}`}
-                fill
-                unoptimized
-                style={{ objectFit: "fill" }}
               />
             )}
           </div>
