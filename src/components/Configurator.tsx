@@ -103,22 +103,21 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
           justifyContent: "space-between",
           gap: 16,
           padding: "16px 20px",
-          background: "color-mix(in srgb, var(--bg) 88%, transparent)",
-          backdropFilter: "blur(10px)",
-          borderBottom: "1px solid var(--border)",
+          background: "#0a0a0a",
+          borderBottom: "1px solid #262626",
         }}
       >
         <div style={{ display: "flex", alignItems: "baseline", gap: 10, minWidth: 0 }}>
-          <span className="display" style={{ fontSize: "1.4rem", letterSpacing: "0.04em", fontWeight: 600 }}>
-            GRILLUXE
+          <span className="wordmark" style={{ fontSize: "1.3rem", color: "#ffffff" }}>
+            grilluxe
           </span>
-          <span style={{ color: "var(--text-muted)", fontSize: "0.82rem", whiteSpace: "nowrap" }}>Küchenkonfigurator</span>
+          <span style={{ color: "#8a8a8a", fontSize: "0.82rem", whiteSpace: "nowrap" }}>Küchenkonfigurator</span>
         </div>
         <div style={{ textAlign: "right", flexShrink: 0 }}>
-          <div style={{ fontSize: "0.68rem", letterSpacing: "0.09em", textTransform: "uppercase", color: "var(--text-faint)" }}>
+          <div style={{ fontSize: "0.68rem", letterSpacing: "0.09em", textTransform: "uppercase", color: "#8a8a8a" }}>
             Gesamtpreis
           </div>
-          <div className="num" style={{ fontSize: "1.25rem", fontWeight: 600 }}>
+          <div className="num" style={{ fontSize: "1.25rem", fontWeight: 600, color: "#ffffff" }}>
             {money.format(totalPrice)}
           </div>
         </div>

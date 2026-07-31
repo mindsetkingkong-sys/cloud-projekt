@@ -13,8 +13,8 @@ export type ConfiguratorCategory = {
 };
 
 export const KITCHEN_LINE = {
-  id: "signature",
-  name: "Grilluxe Signature",
+  id: "port-xxl",
+  name: "Port XXL",
   basePrice: 23000,
 };
 
