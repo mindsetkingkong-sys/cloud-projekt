@@ -313,26 +313,6 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
             </div>
           </div>
 
-          <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius)", padding: "14px 16px" }}>
-            <div style={{ fontWeight: 600, fontSize: "0.94rem" }}>Zusatzoptionen</div>
-            <ToggleRow
-              label="LED-Ambientelicht"
-              priceLabel={`+${money.format(LED_PRICE_DELTA)}`}
-              note="Wechselt automatisch die Farbe, solange eingeschaltet."
-              checked={selections.ledOn === "on"}
-              onChange={toggleLed}
-            />
-            {ADDONS.map((addon) => (
-              <ToggleRow
-                key={addon.id}
-                label={addon.label}
-                priceLabel={`+${money.format(addon.priceDelta)}`}
-                checked={selections[addon.id] === "on"}
-                onChange={() => toggleAddon(addon.id)}
-              />
-            ))}
-          </div>
-
           {CATEGORIES.map((category) => {
             const isOpen = openGroup === category.id;
             const current = findOption(category.id, selections[category.id]);
@@ -413,31 +393,27 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
             );
           })}
 
-          <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius)", padding: 16 }}>
-            <label style={{ display: "block", fontSize: "0.82rem", color: "var(--text-muted)", marginBottom: 6 }}>
-              Postleitzahl (für Transportkosten)
-            </label>
-            <input
-              value={selections.plz}
-              onChange={(e) => {
-                const value = e.target.value.replace(/[^0-9]/g, "").slice(0, 5);
-                setSelections((prev) => ({ ...prev, plz: value }));
-                setSavedLink(null);
-              }}
-              placeholder="z. B. 80331"
-              inputMode="numeric"
-              style={{ ...inputStyle, width: "100%" }}
+          <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius)", padding: "14px 16px" }}>
+            <div style={{ fontWeight: 600, fontSize: "0.94rem" }}>Zusatzoptionen</div>
+            <ToggleRow
+              label="LED-Ambientelicht"
+              priceLabel={`+${money.format(LED_PRICE_DELTA)}`}
+              note="Wechselt automatisch die Farbe, solange eingeschaltet."
+              checked={selections.ledOn === "on"}
+              onChange={toggleLed}
             />
-            {selections.plz && !isValidPlz(selections.plz) && (
-              <p style={{ marginTop: 4, fontSize: "0.76rem", color: "var(--text-faint)" }}>5-stellige PLZ eingeben.</p>
-            )}
-            {isValidPlz(selections.plz) && (
-              <div style={{ display: "flex", justifyContent: "space-between", marginTop: 8, fontSize: "0.85rem", color: "var(--text-muted)" }}>
-                <span>Transportkosten</span>
-                <span className="num">{money.format(TRANSPORT_FLAT_FEE)}</span>
-              </div>
-            )}
+            {ADDONS.map((addon) => (
+              <ToggleRow
+                key={addon.id}
+                label={addon.label}
+                priceLabel={`+${money.format(addon.priceDelta)}`}
+                checked={selections[addon.id] === "on"}
+                onChange={() => toggleAddon(addon.id)}
+              />
+            ))}
+          </div>
 
+          <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius)", padding: 16 }}>
             <div
               style={{
                 display: "flex",
@@ -509,6 +485,27 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
 
               {showInquiryForm && (
                 <form onSubmit={handleInquirySubmit} style={{ display: "flex", flexDirection: "column", gap: 8, marginTop: 4 }}>
+                  <label style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>Postleitzahl (für Transportkosten)</label>
+                  <input
+                    value={selections.plz}
+                    onChange={(e) => {
+                      const value = e.target.value.replace(/[^0-9]/g, "").slice(0, 5);
+                      setSelections((prev) => ({ ...prev, plz: value }));
+                      setSavedLink(null);
+                    }}
+                    placeholder="z. B. 80331"
+                    inputMode="numeric"
+                    style={inputStyle}
+                  />
+                  {selections.plz && !isValidPlz(selections.plz) && (
+                    <p style={{ fontSize: "0.76rem", color: "var(--text-faint)" }}>5-stellige PLZ eingeben.</p>
+                  )}
+                  {isValidPlz(selections.plz) && (
+                    <div style={{ display: "flex", justifyContent: "space-between", fontSize: "0.85rem", color: "var(--text-muted)" }}>
+                      <span>Transportkosten</span>
+                      <span className="num">{money.format(TRANSPORT_FLAT_FEE)}</span>
+                    </div>
+                  )}
                   <input name="name" required placeholder="Name" style={inputStyle} />
                   <input name="email" type="email" required placeholder="E-Mail" style={inputStyle} />
                   <input name="phone" placeholder="Telefon (optional)" style={inputStyle} />
