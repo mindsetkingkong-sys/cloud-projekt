@@ -393,12 +393,11 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
                                 border: "1px solid var(--shadow)",
                                 backgroundColor:
                                   option.swatchColor === "transparent" ? undefined : option.swatchColor,
-                                backgroundImage:
-                                  category.id !== "countertops" && option.image
-                                    ? `url(${option.image.replace(/\/([^/]+)\.\w+$/, "/thumbs/$1.jpg")})`
-                                    : option.swatchColor === "transparent"
-                                      ? "repeating-conic-gradient(var(--border) 0% 25%, transparent 0% 50%) 50% / 8px 8px"
-                                      : undefined,
+                                backgroundImage: option.thumb
+                                  ? `url(${option.thumb})`
+                                  : option.swatchColor === "transparent"
+                                    ? "repeating-conic-gradient(var(--border) 0% 25%, transparent 0% 50%) 50% / 8px 8px"
+                                    : undefined,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
                               }}
