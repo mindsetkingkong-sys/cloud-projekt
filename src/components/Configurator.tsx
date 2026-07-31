@@ -247,7 +247,7 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
               background: "var(--surface-2)",
             }}
           >
-            <Image src={BACKGROUND_IMAGE} alt="Grilluxe Außenküche" fill sizes="(max-width: 880px) 100vw, 700px" priority style={{ objectFit: "fill" }} />
+            <Image src={BACKGROUND_IMAGE} alt="Grilluxe Außenküche" fill unoptimized priority style={{ objectFit: "fill" }} />
             {CATEGORIES.map((category) => {
               const option = findOption(category.id, selections[category.id]);
               if (!option?.image) return null;
@@ -257,7 +257,7 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
                   src={option.image}
                   alt={`${category.label}: ${option.label}`}
                   fill
-                  sizes="(max-width: 880px) 100vw, 700px"
+                  unoptimized
                   style={{ objectFit: "fill" }}
                 />
               );
@@ -268,7 +268,7 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
                 src={LED_COLORS[ledColorIndex].image}
                 alt={`LED-Ambientelicht: ${LED_COLORS[ledColorIndex].label}`}
                 fill
-                sizes="(max-width: 880px) 100vw, 700px"
+                unoptimized
                 style={{ objectFit: "fill" }}
               />
             )}
