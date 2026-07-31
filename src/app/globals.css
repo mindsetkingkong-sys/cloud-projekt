@@ -1,0 +1,86 @@
+:root {
+  --bg: #17130f;
+  --bg-glow: #2a1a10;
+  --surface: #211b16;
+  --surface-2: #2a231d;
+  --border: #3c322a;
+  --text: #f3ece1;
+  --text-muted: #b3a494;
+  --text-faint: #7d6f60;
+  --accent: #d9803f;
+  --accent-strong: #f2984f;
+  --accent-ink: #241206;
+  --shadow: rgba(0, 0, 0, 0.45);
+  --radius: 10px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f4ecdd;
+    --bg-glow: #f0d9b8;
+    --surface: #fffaf1;
+    --surface-2: #f4ead7;
+    --border: #e0d0b6;
+    --text: #251d15;
+    --text-muted: #6c5f4d;
+    --text-faint: #93866f;
+    --accent: #b85c26;
+    --accent-strong: #9c4c1d;
+    --accent-ink: #fff6ea;
+    --shadow: rgba(90, 70, 40, 0.16);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+.display {
+  font-family: ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+a,
+button {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:is(button, a, summary, input, textarea):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (max-width: 880px) {
+  .layout-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
