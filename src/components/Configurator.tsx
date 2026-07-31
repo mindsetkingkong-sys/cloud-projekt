@@ -395,7 +395,7 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
                                   option.swatchColor === "transparent" ? undefined : option.swatchColor,
                                 backgroundImage:
                                   category.id !== "countertops" && option.image
-                                    ? `url(${option.image.replace(/\/([^/]+)\.png$/, "/thumbs/$1.jpg")})`
+                                    ? `url(${option.image.replace(/\/([^/]+)\.\w+$/, "/thumbs/$1.jpg")})`
                                     : option.swatchColor === "transparent"
                                       ? "repeating-conic-gradient(var(--border) 0% 25%, transparent 0% 50%) 50% / 8px 8px"
                                       : undefined,
