@@ -1,5 +1,5 @@
 import { prisma } from "@/lib/prisma";
-import { CATEGORIES, Selections, findOption } from "@/lib/product-data";
+import { CATEGORIES, Selections, findFormat, findOption } from "@/lib/product-data";
 
 export const dynamic = "force-dynamic";
 
@@ -8,10 +8,13 @@ const dateFmt = new Intl.DateTimeFormat("de-DE", { dateStyle: "medium", timeStyl
 
 function describeSelections(raw: string): string {
   const selections = JSON.parse(raw) as Selections;
-  return CATEGORIES.map((category) => {
+  const parts = [`Größe: ${findFormat(selections.format)?.label ?? "–"}`];
+  for (const category of CATEGORIES) {
     const option = findOption(category.id, selections[category.id]);
-    return `${category.label}: ${option?.label ?? "–"}`;
-  }).join(" · ");
+    parts.push(`${category.label}: ${option?.label ?? "–"}`);
+  }
+  parts.push(`LED-Ambientelicht: ${selections.ledOn === "on" ? "an" : "aus"}`);
+  return parts.join(" · ");
 }
 
 export default async function InternPage() {

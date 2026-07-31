@@ -74,28 +74,48 @@ export const CATEGORIES: ConfiguratorCategory[] = [
       { id: "nero_zimbabwe", label: "Nero Zimbabwe", image: "/kitchen/countertops/Blat_nero_zimbabwe.png", priceDelta: 0, swatchColor: "#201f1e" },
     ],
   },
-  {
-    id: "ledColor",
-    label: "LED-Ambientelicht",
-    options: [
-      { id: "off", label: "Aus", image: null, priceDelta: 0, swatchColor: "transparent" },
-      { id: "white", label: "Weiß", image: "/kitchen/led/Glare_Bialy.png", priceDelta: 0, swatchColor: "#ffffff" },
-      { id: "red", label: "Rot", image: "/kitchen/led/Glare_Czerwony.png", priceDelta: 0, swatchColor: "#e0473f" },
-      { id: "blue", label: "Blau", image: "/kitchen/led/Glare_Niebieski.png", priceDelta: 0, swatchColor: "#3f7fe0" },
-      { id: "orange", label: "Orange", image: "/kitchen/led/Glare_Pomaranczowy.png", priceDelta: 0, swatchColor: "#e08a3f" },
-      { id: "pink", label: "Pink", image: "/kitchen/led/Glare_Rozowy.png", priceDelta: 0, swatchColor: "#e05fa0" },
-      { id: "green", label: "Grün", image: "/kitchen/led/Glare_Zielony.png", priceDelta: 0, swatchColor: "#4fae5c" },
-    ],
-  },
 ];
 
 export const BACKGROUND_IMAGE = "/kitchen/background/tlo-kuchnia-dzien-01.jpg";
 
-export type Selections = Record<string, string>;
+export const LED_COLORS: { id: string; label: string; image: string }[] = [
+  { id: "white", label: "Weiß", image: "/kitchen/led/Glare_Bialy.png" },
+  { id: "red", label: "Rot", image: "/kitchen/led/Glare_Czerwony.png" },
+  { id: "blue", label: "Blau", image: "/kitchen/led/Glare_Niebieski.png" },
+  { id: "orange", label: "Orange", image: "/kitchen/led/Glare_Pomaranczowy.png" },
+  { id: "pink", label: "Pink", image: "/kitchen/led/Glare_Rozowy.png" },
+  { id: "green", label: "Grün", image: "/kitchen/led/Glare_Zielony.png" },
+];
 
-export const DEFAULT_SELECTIONS: Selections = Object.fromEntries(
-  CATEGORIES.map((category) => [category.id, category.options[0].id])
-);
+export type KitchenFormat = {
+  id: string;
+  label: string;
+  widthCm: number;
+  depthCm: number;
+  heightCm: number;
+  priceDelta: number;
+  hasPreviewImage: boolean;
+};
+
+export const FORMATS: KitchenFormat[] = [
+  { id: "l", label: "L", widthCm: 241, depthCm: 98, heightCm: 234, priceDelta: 0, hasPreviewImage: false },
+  { id: "xl", label: "XL", widthCm: 307, depthCm: 98, heightCm: 234, priceDelta: 0, hasPreviewImage: false },
+  { id: "xxl", label: "XXL", widthCm: 366, depthCm: 98, heightCm: 234, priceDelta: 0, hasPreviewImage: true },
+];
+
+export const DEFAULT_FORMAT = "xxl";
+
+export function findFormat(formatId: string): KitchenFormat | undefined {
+  return FORMATS.find((f) => f.id === formatId);
+}
+
+export type Selections = Record<string, string> & { format: string; ledOn: string };
+
+export const DEFAULT_SELECTIONS: Selections = {
+  format: DEFAULT_FORMAT,
+  ledOn: "off",
+  ...Object.fromEntries(CATEGORIES.map((category) => [category.id, category.options[0].id])),
+};
 
 export function findOption(categoryId: string, optionId: string): ConfiguratorOption | undefined {
   return CATEGORIES.find((c) => c.id === categoryId)?.options.find((o) => o.id === optionId);
@@ -103,6 +123,8 @@ export function findOption(categoryId: string, optionId: string): ConfiguratorOp
 
 export function calculateTotalPrice(selections: Selections): number {
   let total = KITCHEN_LINE.basePrice;
+  const format = findFormat(selections.format);
+  if (format) total += format.priceDelta;
   for (const category of CATEGORIES) {
     const option = findOption(category.id, selections[category.id]);
     if (option) total += option.priceDelta;

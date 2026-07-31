@@ -1,14 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import {
   BACKGROUND_IMAGE,
   CATEGORIES,
   DEFAULT_SELECTIONS,
+  FORMATS,
   KITCHEN_LINE,
+  LED_COLORS,
   Selections,
   calculateTotalPrice,
+  findFormat,
   findOption,
 } from "@/lib/product-data";
 
@@ -33,10 +36,31 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
   const [inquirySuccess, setInquirySuccess] = useState(false);
   const [inquiryError, setInquiryError] = useState<string | null>(null);
 
+  const [ledColorIndex, setLedColorIndex] = useState(0);
+
   const totalPrice = calculateTotalPrice(selections);
+  const currentFormat = findFormat(selections.format);
+
+  useEffect(() => {
+    if (selections.ledOn !== "on") return;
+    const interval = setInterval(() => {
+      setLedColorIndex((i) => (i + 1) % LED_COLORS.length);
+    }, 2200);
+    return () => clearInterval(interval);
+  }, [selections.ledOn]);
 
   function selectOption(categoryId: string, optionId: string) {
     setSelections((prev) => ({ ...prev, [categoryId]: optionId }));
+    setSavedLink(null);
+  }
+
+  function selectFormat(formatId: string) {
+    setSelections((prev) => ({ ...prev, format: formatId }));
+    setSavedLink(null);
+  }
+
+  function toggleLed() {
+    setSelections((prev) => ({ ...prev, ledOn: prev.ledOn === "on" ? "off" : "on" }));
     setSavedLink(null);
   }
 
@@ -163,7 +187,7 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
             }}
           >
             <Image src={BACKGROUND_IMAGE} alt="Grilluxe Außenküche" fill sizes="(max-width: 880px) 100vw, 700px" priority style={{ objectFit: "fill" }} />
-            {CATEGORIES.filter((c) => c.id !== "ledColor").map((category) => {
+            {CATEGORIES.map((category) => {
               const option = findOption(category.id, selections[category.id]);
               if (!option?.image) return null;
               return (
@@ -177,26 +201,93 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
                 />
               );
             })}
-            {(() => {
-              const led = findOption("ledColor", selections.ledColor);
-              if (!led?.image) return null;
-              return (
-                <Image
-                  src={led.image}
-                  alt={`LED-Ambientelicht: ${led.label}`}
-                  fill
-                  sizes="(max-width: 880px) 100vw, 700px"
-                  style={{ objectFit: "fill" }}
-                />
-              );
-            })()}
+            {selections.ledOn === "on" && (
+              <Image
+                key={LED_COLORS[ledColorIndex].id}
+                src={LED_COLORS[ledColorIndex].image}
+                alt={`LED-Ambientelicht: ${LED_COLORS[ledColorIndex].label}`}
+                fill
+                sizes="(max-width: 880px) 100vw, 700px"
+                style={{ objectFit: "fill" }}
+              />
+            )}
           </div>
           <p style={{ marginTop: 14, fontSize: "0.78rem", color: "var(--text-faint)", textAlign: "center" }}>
-            Live-Vorschau auf Basis eurer Renderbilder.
+            {currentFormat?.hasPreviewImage
+              ? "Live-Vorschau auf Basis eurer Renderbilder."
+              : `Live-Vorschau zeigt aktuell das Format XXL — Bilder für ${currentFormat?.label} folgen.`}
           </p>
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+          <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius)", padding: 16 }}>
+            <div style={{ fontWeight: 600, fontSize: "0.94rem", marginBottom: 10 }}>Größe</div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              {FORMATS.map((format) => (
+                <label
+                  key={format.id}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 10,
+                    padding: "8px 10px",
+                    borderRadius: 8,
+                    border: selections.format === format.id ? "1px solid var(--accent)" : "1px solid var(--border)",
+                    cursor: "pointer",
+                  }}
+                >
+                  <input
+                    type="radio"
+                    name="format"
+                    checked={selections.format === format.id}
+                    onChange={() => selectFormat(format.id)}
+                    style={{ accentColor: "var(--accent)" }}
+                  />
+                  <span style={{ fontSize: "0.88rem" }}>
+                    <strong>{format.label}</strong> — Breite {format.widthCm} cm, Tiefe {format.depthCm} cm, Höhe{" "}
+                    {format.heightCm} cm
+                  </span>
+                </label>
+              ))}
+            </div>
+          </div>
+
+          <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius)", padding: "14px 16px" }}>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+              <span style={{ fontWeight: 600, fontSize: "0.94rem" }}>LED-Ambientelicht</span>
+              <button
+                onClick={toggleLed}
+                aria-pressed={selections.ledOn === "on"}
+                style={{
+                  width: 44,
+                  height: 26,
+                  borderRadius: 999,
+                  border: "1px solid var(--border)",
+                  background: selections.ledOn === "on" ? "var(--accent)" : "var(--surface-2)",
+                  position: "relative",
+                  flexShrink: 0,
+                  transition: "background 0.15s ease",
+                }}
+              >
+                <span
+                  style={{
+                    position: "absolute",
+                    top: 2,
+                    left: selections.ledOn === "on" ? 20 : 2,
+                    width: 20,
+                    height: 20,
+                    borderRadius: "50%",
+                    background: selections.ledOn === "on" ? "var(--accent-ink)" : "var(--text-faint)",
+                    transition: "left 0.15s ease",
+                  }}
+                />
+              </button>
+            </div>
+            <p style={{ marginTop: 6, fontSize: "0.78rem", color: "var(--text-faint)" }}>
+              Wechselt automatisch die Farbe, solange eingeschaltet.
+            </p>
+          </div>
+
           {CATEGORIES.map((category) => {
             const isOpen = openGroup === category.id;
             const current = findOption(category.id, selections[category.id]);
@@ -251,9 +342,9 @@ export default function Configurator({ initialSelections, initialConfigId }: Pro
                           >
                             <span
                               style={{
-                                width: 30,
-                                height: 30,
-                                borderRadius: "50%",
+                                width: 40,
+                                height: 40,
+                                borderRadius: 10,
                                 border: "1px solid var(--shadow)",
                                 background:
                                   option.swatchColor === "transparent"
