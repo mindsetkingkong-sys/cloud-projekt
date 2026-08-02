@@ -46,8 +46,14 @@ Bewegung physikalisch logisch, Charakterkonsistenz erhalten.
 - Eine zweite, unabhängige Handlung ersetzt/überlagert die Hauptaktion (nicht
   zu verwechseln mit einer kleinen natürlichen Nebenbewegung) oder ein
   Perspektivwechsel ist eingeschlichen
-- Sichtbares Wasserzeichen liegt im relevanten Bildbereich
 - Physik wirkt falsch (schwebende Objekte, unlogische Bewegung)
+
+**Kein Grund für Neu-Generierung:** das sichtbare Gemini-Wasserzeichen/Icon.
+Es tritt bei praktisch jeder Veo-Generierung auf, wechselnd in Position —
+erneutes Generieren verschiebt es nur, entfernt es nicht. Wird als
+akzeptiertes Merkmal behandelt (croppen nur, wenn es in leerem Hintergrund
+liegt und kein Bildinhalt verloren geht), nicht als Fehler mit
+Regenerierungs-Kontingent bekämpft.
 
 ## Typische Veo-Fehler (worauf beim Ergebnis geachtet wird)
 

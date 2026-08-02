@@ -63,7 +63,12 @@ nicht besser.
 ## Phase 4 — Bilder für Veo vorbereiten
 
 - Seitenverhältnis 9:16 am Keyframe prüfen/zuschneiden.
-- Bildecken auf sichtbares Wasserzeichen/Icon prüfen; falls vorhanden, Crop
-  so wählen, dass es außerhalb des finalen Bildausschnitts liegt.
+- Sichtbares Wasserzeichen/Icon (Gemini-Sparkle) ist aktuell technisch nicht
+  zuverlässig vermeidbar und tritt bei praktisch jeder Generierung auf,
+  wechselnd in Position. Nur croppen, wenn es in leerem Hintergrund landet
+  und dabei kein relevanter Bildinhalt verloren geht — landet es auf
+  Kleidung/Haut/Motiv, akzeptieren statt Bildausschnitt zu opfern oder neu
+  zu generieren (siehe `veo-workflow.md`, Abschnitt "Wann ein Shot neu
+  generiert werden muss").
 - Erst dann als Asset-Referenzbild in Veo verwenden (siehe
   `veo-workflow.md`).

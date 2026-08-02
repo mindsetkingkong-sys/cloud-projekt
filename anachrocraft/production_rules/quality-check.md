@@ -24,7 +24,7 @@ hinterher reparieren.
 - [ ] Ist die beschriebene Hauptaktion in der gewählten Clip-Länge plausibel machbar (siehe Clip-Längen-Tabelle in `camera-system.md`)?
 
 ## 5. Artefakt-Risiken
-- [ ] Bildausschnitt so gewählt, dass ein mögliches Wasserzeichen/Icon in der Ecke nicht mitten im relevanten Bildbereich landet?
+- [ ] Falls das Gemini-Wasserzeichen im leeren Hintergrund landet: gecropt? (Landet es auf Kleidung/Haut/Motiv, wird es akzeptiert, kein Regenerierungsgrund — siehe `veo-workflow.md`.)
 - [ ] Prompt enthält keine Formulierung, die zu bekannten Fehlermustern führt (siehe `negative-patterns.md`)?
 
 ## 6. Veo 3.1 Eignungsprüfung
