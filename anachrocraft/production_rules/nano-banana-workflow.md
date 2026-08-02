@@ -21,7 +21,7 @@ Rollen genutzt werden, hängt vom Shot ab, nicht fix vorgeschrieben. Typisches
 Muster für Leif:
 - **Image 1 = Gesichtsidentität** (Front-Ansicht aus dem Charaktersheet)
 - **Image 2 = Kleidung oder Ausrüstung** (z.B. Rucksack/Axt-Detail)
-- **Image 3 = Umgebung oder Stil** (falls für den Shot relevant)
+- **Image 3 = Stil** (Farbgrading/Look-Referenz, falls für den Shot relevant)
 
 Je nach Bedarf können auch nur zwei Bilder mit Rollen (z.B. Gesicht +
 Kleidung) genügen — entscheidend ist die klare Rollenzuweisung, nicht die
@@ -35,7 +35,10 @@ exakte Anzahl oder Reihenfolge.
 
 Umgebung und Handlung werden **nur im Text** beschrieben, nicht über ein
 Referenzbild — sonst überträgt sich die alte Umgebung ungewollt auf die neue
-Szene.
+Szene. Ausnahme: eine bereits bestätigte, wiederkehrende Location soll exakt
+reproduziert werden — dann darf ein bestehendes Keyframe dieser Location
+zusätzlich als Bild-Referenz dienen, mit klarer Rollenbenennung ("Image X =
+Ortsreferenz, exakte Wiederverwendung").
 
 ## Phase 3 — Konsistenz prüfen
 
