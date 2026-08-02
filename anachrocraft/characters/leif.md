@@ -6,7 +6,7 @@ Ein Skandinavier, der die Zivilisation verlässt, um sich von Grund auf ein Lebe
 in der Wildnis aufzubauen. Übergeordnetes Serienziel: ein komplettes Homestead
 errichten, bevor der erste Winter kommt (Staffel-1-Spannungsbogen).
 
-## Kanonisches Aussehen (fix, ab Referenzbild v1 unveränderlich)
+## Kanonisches Aussehen (konstant innerhalb einer Episode)
 
 - **Alter:** Ende 30 / Anfang 40
 - **Statur:** groß, breite Schultern, athletisch-durchtrainiert
@@ -31,7 +31,12 @@ Frühe Testgenerierungen zeigten Drift zwischen einzelnen Generierungen:
 Rucksack wechselte zwischen drei Varianten (Canvas+Schlafmatte /
 Canvas ohne Schlafmatte / Leder-Satchel), Axt-Anzahl schwankte (1 vs. 2),
 Bart-Grauanteil schwankte stark. Diese Liste ist die verbindliche Auflösung
-dieser Widersprüche — jede künftige Generierung muss sich exakt daran halten.
+dieser Widersprüche. Diese Eigenschaften bleiben innerhalb einer Episode
+konstant, außer eine bewusste Story-Entwicklung benötigt eine Änderung (z.B.
+zunehmend abgenutzte Kleidung über die Staffel hinweg, siehe
+`../production_rules/continuity_rules.md`). Eine solche Änderung wird hier im
+Kanon aktualisiert, nicht nur stillschweigend in einzelnen Prompts abweichen
+gelassen.
 
 ## Referenzbild
 

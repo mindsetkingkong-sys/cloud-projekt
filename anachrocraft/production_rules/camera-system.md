@@ -31,9 +31,29 @@
 | Wide Shot | 5-6s |
 | Establishing Shot | 6-8s |
 
+## Perspektive
+
+| Perspektive | Verwendung |
+|---|---|
+| Eye-level | Standard, neutral |
+| Low angle | Leif wirkt größer/bestimmender (z.B. vor fertigem Bauwerk) |
+| High angle | Leif wirkt klein gegenüber der Wildnis (z.B. Verlorenheit, Weite) |
+| Over-the-shoulder | Blick auf das, was Leif ansieht |
+
+## Priorität der Kamera-Beschreibung (fix)
+
+1. Shot Size
+2. Camera Movement
+3. Perspective
+4. Lens/Visual Look
+5. Lighting
+
+Objektivwerte (mm) werden **niemals als alleinige Kamera-Beschreibung**
+verwendet, sondern immer zusätzlich zu Shot Size und Movement.
+
 ## Prompt-Formel (fix für jeden Shot)
 
-`[Shot-Größe] + [Kamerabewegung] + [Objektiv/Look] + [Licht aus lighting_rules.md] + [eine Handlung]`
+`[Shot-Größe] + [Kamerabewegung] + [Perspektive] + [Objektiv/Look] + [Licht aus lighting_rules.md] + [dominante Hauptaktion, kleine Nebenbewegungen erlaubt]`
 
 ## Regel
 

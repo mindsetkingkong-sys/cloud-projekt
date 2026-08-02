@@ -3,8 +3,8 @@
 ## Realität
 
 ~3 Veo-Generierungen pro 5 Stunden (empirisch beobachtet). Daraus folgt:
-nicht jede Episode kann komplett aus frischen Shots bestehen, wenn 3-4
-Episoden/Woche das Ziel sind.
+nicht jede Episode kann komplett aus frischen Shots bestehen — das
+Produktionstempo richtet sich nach der Kapazität, nicht umgekehrt.
 
 ## Strategie
 
@@ -12,28 +12,22 @@ Episoden/Woche das Ziel sind.
   über beliebig viele Episoden als Cutaways wiederverwenden. Kostet nach der
   ersten Generierung kein weiteres Kontingent.
 - **Zwei Episoden-Typen:**
-  - **Meilenstein-Episode** (1x/Woche): mehr frische, Leif-spezifische
-    Shots, größerer Story-Fortschritt.
-  - **Tages-Update-Episode** (2-3x/Woche): überwiegend B-Roll + 1-2 neue
-    Hero-Shots, kurz, "Slow-Living"-Charakter.
+  - **Meilenstein-Episode** (seltener): mehr frische, Leif-spezifische Shots,
+    größerer Story-Fortschritt.
+  - **Tages-Update-Episode** (häufiger): überwiegend B-Roll + 1-2 neue
+    Hero-Shots, kurz, "Slow-Living"-Charakter — hält die Produktion
+    regelmäßig, ohne das Kontingent zu sprengen.
 
-## Wochenproduktion (Zielwert)
+## Priorität (keine festen Produktionszahlen)
 
-3-4 Episoden/Woche, davon max. 1 Meilenstein-Episode. Neue Shots pro Woche:
-~12-16, das liegt innerhalb der realistischen Kapazität (~15-20 verwertbare
-Clips/Woche nach Ausschuss).
+1. **Qualität** — kein Clip wird veröffentlicht, der `quality_check.md` nicht
+   besteht.
+2. **Konsistenz** — Charakter-Kanon und Kontinuität (`continuity_rules.md`)
+   gehen vor neuem Tempo.
+3. **Regelmäßige Produktion** — lieber verlässlich in kleineren Schritten
+   posten als unregelmäßig in großen.
+4. **Geschwindigkeit** — wird nie über die drei vorherigen Punkte gestellt.
 
-## Prioritäten
-
-1. Charakterkonsistenz (Kanon aus `characters/leif.md`)
-2. Kontinuität (Licht/Wetter/Zustand, siehe `continuity_rules.md`)
-3. Story-Fortschritt sichtbar machen
-4. Postfrequenz
-
-## Wann Qualität vor Geschwindigkeit gewinnt
-
-**Immer.** Ein Clip, der `quality_check.md` nicht besteht, wird nicht
-veröffentlicht, auch wenn dadurch eine geplante Episode diese Woche ausfällt.
-Lieber eine Woche mit 2 statt 4 Episoden als ein sichtbar inkonsistenter
-Leif in der Serie — das beschädigt die Wiedererkennbarkeit dauerhaft, ein
-verschobener Post kostet nur einen Tag.
+Eine feste Zahl wie "X Videos pro Woche" wird bewusst nicht erzwungen — die
+Kadenz ergibt sich aus dem, was bei gleichbleibender Qualität tatsächlich
+produzierbar ist, nicht umgekehrt.

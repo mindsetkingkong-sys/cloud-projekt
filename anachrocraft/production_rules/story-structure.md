@@ -20,6 +20,13 @@
 - **Emotionaler Abschluss** — kein sauberes Ende; Episode endet mitten in
   einer unaufgelösten Handlung (Cliffhanger-Prinzip)
 
+## Viewer Retention Check (vor jeder Episode)
+
+- **HOOK:** Warum schaut jemand weiter?
+- **OPEN LOOP:** Welche Frage bleibt offen?
+- **EMOTION:** Was soll der Zuschauer fühlen?
+- **PAYOFF:** Was bekommt der Zuschauer am Ende?
+
 ## Übergeordneter Bogen (Kontext, nicht pro Episode neu entscheiden)
 
 4 Akte über ~40 Episoden (skalierbar 30-60): Ankunft → Aufbau → Krise →

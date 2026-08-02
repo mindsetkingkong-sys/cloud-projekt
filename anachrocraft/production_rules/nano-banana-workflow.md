@@ -15,11 +15,17 @@ Für jeden Shot einer Episode ein einzelnes Foto-Keyframe generieren, das
 bereits Pose, Ort, Licht und Handlung korrekt zeigt — Veo bekommt später nur
 noch die Aufgabe, dieses Bild zu animieren.
 
-Reihenfolge der Bildreferenzen im Prompt (explizit benennen, nicht nur
-anhängen):
-1. **Image 1 = Gesicht/Identität** (Front-Ansicht aus dem Sheet)
-2. **Image 2 = Bart/Profil-Detail** (3/4- oder Profil-Ansicht)
-3. **Image 3 = Kleidung/Ausrüstung** (Referenzbild mit vollständigem Outfit)
+Wenn mehrere Referenzbilder verwendet werden, muss **jedes Bild eine klare
+Rolle erhalten** (explizit im Prompt benennen, nicht nur anhängen) — welche
+Rollen genutzt werden, hängt vom Shot ab, nicht fix vorgeschrieben. Typisches
+Muster für Leif:
+- **Image 1 = Gesichtsidentität** (Front-Ansicht aus dem Charaktersheet)
+- **Image 2 = Kleidung oder Ausrüstung** (z.B. Rucksack/Axt-Detail)
+- **Image 3 = Umgebung oder Stil** (falls für den Shot relevant)
+
+Je nach Bedarf können auch nur zwei Bilder mit Rollen (z.B. Gesicht +
+Kleidung) genügen — entscheidend ist die klare Rollenzuweisung, nicht die
+exakte Anzahl oder Reihenfolge.
 
 Umgebung und Handlung werden **nur im Text** beschrieben, nicht über ein
 Referenzbild — sonst überträgt sich die alte Umgebung ungewollt auf die neue

@@ -20,17 +20,25 @@ hinterher reparieren.
 - [ ] Genau eine Kamera, ein Shot — kein Schnitt/Perspektivwechsel innerhalb des Prompts?
 
 ## 4. Physik-Prüfung
-- [ ] Nur eine Handlung im Prompt (kein "läuft, schaut, hebt auf, dreht sich")?
-- [ ] Ist die beschriebene Handlung in der gewählten Clip-Länge plausibel machbar (siehe Clip-Längen-Tabelle in `camera-system.md`)?
+- [ ] Eine dominante Hauptaktion im Prompt? Kleine natürliche Nebenbewegungen/Reaktionen sind erlaubt (z.B. "läuft, bleibt stehen, schaut sich um"), mehrere unabhängige Handlungen/Ortswechsel (z.B. "läuft, baut Hütte, kämpft, findet Gegenstand, wechselt Ort") nicht.
+- [ ] Ist die beschriebene Hauptaktion in der gewählten Clip-Länge plausibel machbar (siehe Clip-Längen-Tabelle in `camera-system.md`)?
 
 ## 5. Artefakt-Risiken
 - [ ] Bildausschnitt so gewählt, dass ein mögliches Wasserzeichen/Icon in der Ecke nicht mitten im relevanten Bildbereich landet?
 - [ ] Prompt enthält keine Formulierung, die zu bekannten Fehlermustern führt (siehe `negative_patterns.md`)?
 
 ## 6. Veo 3.1 Eignungsprüfung
-- [ ] Clip-Länge liegt bei 4, 6 oder 8 Sekunden (keine anderen Werte anfragen)?
+- [ ] Clip-Länge entspricht den aktuell verfügbaren Einstellungen und ist so gewählt, dass die Szene innerhalb dieses einen Clips verständlich und visuell umsetzbar ist?
 - [ ] Kein Timestamp-Multi-Beat für Story-Shots (verworfen, siehe `negative_patterns.md`)?
 - [ ] Seitenverhältnis 9:16 explizit gesetzt?
+
+## 7. Story-Zweck
+- [ ] Warum existiert dieser Shot?
+- [ ] Bringt er die Handlung weiter?
+- [ ] Erzeugt er Interesse oder Emotion?
+
+Ein visuell schöner Shot ohne Story-Funktion wird verbessert oder entfernt,
+nicht allein wegen guter Optik behalten.
 
 **Regel:** Wenn ein Punkt nicht erfüllt ist, wird der Prompt korrigiert, bevor
 generiert wird — nicht danach in der Nachbearbeitung "repariert".

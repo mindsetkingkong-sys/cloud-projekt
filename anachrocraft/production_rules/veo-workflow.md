@@ -9,8 +9,13 @@
 3. **Prompt erstellen** — Formel aus `camera-system.md`, Licht/Wetter aus
    `lighting_rules.md` und `continuity_rules.md` für diese Episode
    übernehmen, Keyframe als Asset-Referenzbild anhängen.
-4. **Video generieren** — 4, 6 oder 8 Sekunden je nach Shot-Größe, **eine**
-   Handlung, kein Timestamp-Multi-Beat.
+4. **Video generieren** — kurze Clip-Länge entsprechend der verfügbaren
+   Einstellungen und der Shot-Größe (siehe `camera-system.md`). Eine
+   **dominante Hauptaktion** pro Shot; kleine natürliche Bewegungen/Reaktionen
+   sind erlaubt (z.B. "Leif läuft durch den Wald, bleibt stehen und schaut
+   sich um"). Nicht erlaubt: mehrere unabhängige Handlungen oder Ortswechsel
+   in einem Shot (z.B. "läuft, baut eine Hütte, kämpft, findet einen
+   Gegenstand und wechselt den Ort"). Kein Timestamp-Multi-Beat.
 5. **Fehler analysieren** — Ergebnis gegen `negative_patterns.md` prüfen.
 6. **Verbessern** — bei Fehler: Prompt präzisieren oder neu generieren, nicht
    den Fehler in der Nachbearbeitung "wegschneiden", wenn er den Charakter
@@ -20,7 +25,9 @@
 
 - Ausrüstung weicht vom Kanon ab (Rucksack, Axt-Anzahl, Mütze)
 - Licht/Tageszeit passt nicht zum Episoden-Wert
-- Zweite Handlung/Perspektivwechsel ist eingeschlichen
+- Eine zweite, unabhängige Handlung ersetzt/überlagert die Hauptaktion (nicht
+  zu verwechseln mit einer kleinen natürlichen Nebenbewegung) oder ein
+  Perspektivwechsel ist eingeschlichen
 - Sichtbares Wasserzeichen liegt im relevanten Bildbereich
 - Physik wirkt falsch (schwebende Objekte, unlogische Bewegung)
 

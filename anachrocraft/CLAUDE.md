@@ -24,18 +24,25 @@ Einzel-Pointen.
 - `episodes/` — Shot-Listen pro Episode
 - `assets/reference_images/` — kanonische Referenzbilder für Charakterkonsistenz
 
-## Wie dieses System benutzt wird
+## Workflow (6 Phasen)
 
-1. Vor jeder neuen Generierung: `characters/leif.md` für den Master-Prompt und
-   `production_rules/camera-system.md` für die Shot-Formel konsultieren.
-2. Jeder Shot läuft über die Zwei-Stufen-Pipeline aus
-   `production_rules/nano-banana-workflow.md` +
-   `production_rules/veo-workflow.md` — nie direktes Text-zu-Video ohne
-   Bild-Zwischenschritt.
-3. Kontingent-Entscheidungen (was wird neu generiert vs. aus dem B-Roll-Pool
-   wiederverwendet) richten sich nach `production_rules/capacity-and-cadence.md`.
-4. Neue Episoden werden als Datei in `episodes/` angelegt, nach dem Muster von
+1. **Story analysieren** — Bogen/Kontext aus `production_rules/story-structure.md`.
+2. **Episode planen** — als Datei in `episodes/` anlegen, nach dem Muster von
    `episodes/episode-01-ankunft.md`.
+3. **Shot-Liste erstellen** — Shot-Größen/Kamerabewegungen/Perspektive aus
+   `production_rules/camera-system.md`.
+4. **Bildreferenzen vorbereiten** — Keyframes über
+   `production_rules/nano-banana-workflow.md`, nie direktes Text-zu-Video ohne
+   Bild-Zwischenschritt.
+5. **Veo-Prompts erstellen** — nach `production_rules/veo-workflow.md`. Nutze
+   kurze Veo-Clips entsprechend den verfügbaren Einstellungen. Plane jede
+   Szene so, dass sie innerhalb eines einzelnen Clips verständlich und
+   visuell umsetzbar ist.
+6. **Quality Check** — jeder Shot durchläuft `production_rules/quality_check.md`
+   vor Freigabe.
+
+Kontingent-Entscheidungen (was wird neu generiert vs. aus dem B-Roll-Pool
+wiederverwendet) richten sich nach `production_rules/capacity-and-cadence.md`.
 
 ## Verifikationsstand (wichtig für Vertrauenswürdigkeit)
 
