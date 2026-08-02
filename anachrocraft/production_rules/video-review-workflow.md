@@ -23,6 +23,11 @@ Prüfe gegen den Kanon in `../characters/leif.md`:
 - Axt (genau eine)
 - Körperproportionen
 
+**Wichtig:** Rucksack und Axt an mindestens 3 Stellen im Clip prüfen
+(Anfang/Mitte/Ende), nicht nur dort, wo ein Problem bereits gemeldet wurde
+— Ausrüstung kann unbemerkt an einer anderen Stelle im Clip verschwinden
+oder sich ändern.
+
 Jede Szene mit möglicher Charakterabweichung markieren, mit Zeitstempel.
 
 ## 3. Cinematic Review

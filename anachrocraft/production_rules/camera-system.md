@@ -31,11 +31,12 @@
 | Wide Shot | 5-6s |
 | Establishing Shot | 6-8s |
 
-**Wichtig:** Veo generiert nativ nur 4, 6 oder 8 Sekunden — es gibt keine
-2-3s- oder 3s-Option. Ziel-Längen unter 4s (Extreme Close-up) werden bei 4s
-generiert und danach in CapCut auf die Ziel-Länge getrimmt. Ziel-Längen
-dazwischen (z.B. 5-6s) werden auf den nächstliegenden gültigen Wert
-(4/6/8s) generiert.
+**Wichtig:** Die angeforderte Länge (ob im Prompt-Text oder über eine
+UI-Einstellung) wird von Veo **nicht zuverlässig eingehalten** — mal passt
+sie, mal generiert Veo eine andere Länge (z.B. 10s), ohne erkennbaren
+Grund. Nicht von der Prompt-Angabe ausgehen: nach jeder Generierung die
+**tatsächliche** Länge prüfen und immer damit rechnen, in CapCut auf die
+Ziel-Länge trimmen zu müssen — das ist der Normalfall, nicht die Ausnahme.
 
 ## Perspektive
 
