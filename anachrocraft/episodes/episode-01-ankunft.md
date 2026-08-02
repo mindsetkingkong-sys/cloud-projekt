@@ -279,5 +279,55 @@ identisch wie bei Shot 4).
 7. Extreme Close-up — Leifs Hand umschließt die bereits gehaltene Axt erneut fester, direkte Reaktion auf Shot 6 *(Journey, NEU, Axt-Kontinuität korrigiert)*
 8. Medium Shot, Over-the-shoulder — Leif blickt auf den Fluss *(Payoff)*
 
-Gesamtlänge: ~31-42s. Weiterhin keine finalen Veo-Prompts erstellt — Freigabe
-für die Prompt-Erstellung steht noch aus.
+Gesamtlänge: ~31-42s.
+
+## Finale Prompts (Veo-ready, nach Pre-Production-Audit korrigiert)
+
+Fixe Episoden-Werte in jedem Shot identisch: früher Vormittag, bewölkter
+Himmel, diffuses Flachlicht, keine sichtbare Sonne, kühle blau-graue
+Farbtemperatur, leichter Bodennebel. Cinematic Style ohne "warm sunlight"
+(Widerspruch zum bewölkten Licht, siehe Quality-Check-Funde oben).
+
+Character (identisch in jedem Shot, außer wo vermerkt):
+`LEIF — CHARACTER LOCK: A rugged Scandinavian man, around 28 years old, tall, broad-shouldered, athletic-lean build. Face: strong jawline, weathered sun-tanned skin, prominent brow, calm stoic expression, ice-blue/grey eyes. Hair: shoulder-length straight dirty-blond hair, center-parted, natural texture, always worn open. Beard: full medium-length beard, dirty-blond with light grey strands at the chin. Clothing: red-and-black buffalo-check flannel shirt, top buttons open, sleeves rolled to forearm, dark charcoal thermal base layer at collar/cuffs; olive-brown cargo pants; worn brown leather lace-up work boots. Gear: brown canvas rucksack with a rolled bedroll strapped on top with leather straps; carries exactly one hand axe with dark wood handle and worn steel head. Skin/texture: natural pores, sun-weathered, non-glamorous, unretouched realism.`
+
+Cinematic Style (identisch in jedem Shot): `ultra photorealistic, Nordic survival, natural lighting, cinematic movie look, earth tones, cold shadows, real camera optics, slight film grain, high dynamic range`
+
+Lighting (identisch in jedem Shot): `early morning, overcast sky, diffused flat light, no visible sun, cool blue-grey color temperature, light ground mist`
+
+**Shot 1** — Close-up / Eye-level / Push-in (slow) — 4s, 9:16
+Main Action: `Leif looks intently into the distance, focused and still`
+Environment: `Nordic pine forest, out-of-focus background, moss-covered ground and lichen-covered pine trunks softly blurred`
+
+**Shot 2** — Establishing Shot / Eye-level / Dolly (slow approach) — 6-8s, 9:16
+Main Action: `Leif walks forward and enters the tree line of the forest`
+Environment: `edge of a Nordic pine forest opening into denser woods, moss-covered ground, lichen-covered pine trunks, light ground mist between the trees`
+
+**Shot 3** — Wide Shot / High angle / Tracking (from behind) — 6s, 9:16
+Main Action: `Leif walks deeper into the forest` *(korrigiert: "moving away from camera" entfernt, redundant zu Tracking)*
+Environment: `dense Nordic pine forest, tall trunks receding into the distance, moss-covered ground, lichen-covered bark, light ground mist`
+
+**Shot 4** — Medium Shot / Low angle / Tracking (sideways, following the step) — 4-6s, 9:16 *(Camera Movement korrigiert: "low" entfernt, dupliziert Perspective)*
+Main Action: `Leif steps off the worn forest path onto untouched moss and leaf litter` *(korrigiert: Nebel-Klausel nach Environment verschoben)*
+Environment: `transition point between a compacted dirt path and unbroken moss-covered forest floor, muted light filtering through trees above, ground mist swirling low across the moss`
+
+**Shot 5** — Medium Shot / Eye-level / Tracking (sideways, following the movement) — 4-6s, 9:16
+Main Action: `Leif climbs over a fallen, moss-covered tree trunk blocking the path, axe remaining firmly in his carrying hand throughout`
+Environment: `forest path blocked by a large fallen pine trunk covered in moss, surrounding lichen-covered trees, light ground mist`
+
+**Shot 6** — Close-up / Eye-level / Push-in (slow) — 4s, 9:16
+Main Action: `Leif stops abruptly, tilts his head slightly, listening intently to an unidentified sound off-screen` *(korrigiert: Hand/Axt-Klausel entfernt — in einem Close-up auf das Gesicht nicht im Bild)*
+Environment: `Nordic pine forest, moss-covered ground, lichen-covered trunks softly blurred behind him`
+
+**Shot 7** — Extreme Close-up / Low angle / Push-in (minimal) — nativ 4s generieren, auf 2-3s trimmen, 9:16 *(Camera Movement korrigiert: "static" entfernt, widersprach Push-in)*
+Character: nur Hand + Axt aus dem Master Character Prompt, kein Gesicht im Bild
+Main Action: `Leif's hand tightens its grip around the axe handle already held in his hand` *(korrigiert: Negations-Klausel entfernt)*
+Environment: `close on hand and axe, blurred forest floor and ground mist in the background`
+
+**Shot 8** — Medium Shot / Over-the-shoulder / Push-in (light) — 4-6s, 9:16
+Main Action: `Leif's gaze settles on a river ahead, his posture still and quiet` *(korrigiert: "expression unreadable, uncertain" war Meta-Erzählung, keine visuelle Anweisung)*
+Environment: `a misty river seen from the forest edge, moss-covered banks, lichen-covered trees framing the view`
+
+**Pre-Production-Audit:** durchgeführt, 5 von 8 Shots korrigiert (3, 4, 6, 7, 8), 3 unverändert sauber (1, 2, 5). Gegen `veo-workflow.md`, `characters/leif.md`, `continuity-rules.md`, `quality-check.md`, `negative-patterns.md` geprüft — keine offenen Widersprüche.
+
+**Episode 01 Veo-ready: JA**
