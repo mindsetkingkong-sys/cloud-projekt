@@ -23,13 +23,19 @@
 
 ## Clip-Länge nach Shot-Größe
 
-| Shot-Größe | Länge |
+| Shot-Größe | Ziel-Länge (finaler Schnitt) |
 |---|---|
 | Extreme Close-up | 2-3s |
 | Close-up | 3-4s |
 | Medium Shot | 4-6s |
 | Wide Shot | 5-6s |
 | Establishing Shot | 6-8s |
+
+**Wichtig:** Veo generiert nativ nur 4, 6 oder 8 Sekunden — es gibt keine
+2-3s- oder 3s-Option. Ziel-Längen unter 4s (Extreme Close-up) werden bei 4s
+generiert und danach in CapCut auf die Ziel-Länge getrimmt. Ziel-Längen
+dazwischen (z.B. 5-6s) werden auf den nächstliegenden gültigen Wert
+(4/6/8s) generiert.
 
 ## Perspektive
 

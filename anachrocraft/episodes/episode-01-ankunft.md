@@ -134,3 +134,40 @@ oben freigegeben ist (Anforderung dieses Tests). Nächster Schritt nach
 Freigabe: Charaktersheet erzeugen (Phase 1), dann die fünf Keyframes gemäß
 obiger Pläne generieren, dann erst `veo-workflow.md` Schritt 3 (Veo-Prompt
 nach 7-Feld-Struktur).
+
+## Shot-Listen-Freigabeprüfung
+
+| Shot | 1 Character Consistency | 2 Story Purpose | 3 Retention | 4 Visual Continuity | 5 Veo Feasibility |
+|---|---|---|---|---|---|
+| 1 | ✅ Gesicht voll sichtbar, Kanon prüfbar | ✅ Hook, klare Funktion | ✅ offene Frage "wer/wo" | ✅ passt zu Episoden-Licht | ✅ 4s (Bereichsobergrenze), Push-in umsetzbar |
+| 2 | ✅ Ausrüstungs-Silhouette sichtbar, Gesicht optional | ✅ etabliert Ort | ✅ "was macht er hier" | ✅ | ✅ 6 oder 8s |
+| 3 | ⚠️ nur von hinten sichtbar — **logisch**, aber Rucksack/Axt-Silhouette muss im Bildplan explizit bestätigt werden (höchstes Drift-Risiko, siehe unten) | ✅ High-angle verstärkt Thema | ✅ wachsende Unsicherheit | ⚠️ Himmel muss bewölkt/neblig bleiben, nicht klar/dramatisch werden | ✅ 6s (nächstliegender gültiger Wert) |
+| 4 | ✅ Abwesenheit logisch (Detail-Insert) | ✅ Übergangsmoment (korrigiert letzte Runde) | ✅ "point of no return" | ✅ | ✅ nativ 4s generieren, auf 2-3s trimmen (siehe Fix in `camera-system.md`) |
+| 5 | ⚠️ nur Profil/Rücken sichtbar — logisch (Over-the-shoulder), Rucksack-Silhouette explizit bestätigen | ✅ Cliffhanger | ✅ offene Frage bleibt bestehen | ✅ | ✅ 4 oder 6s |
+
+**Befund 1 (gelöst, kein Blocker):** Shots 1 und 4 lagen unter Veos
+Mindestlänge von 4s. Fix bereits in `camera-system.md` ergänzt: nativ auf
+4s generieren, danach in CapCut auf Ziel-Länge trimmen.
+
+**Befund 2 (gelöst, kein Blocker):** Shots 3 und 5 zeigen Leif nicht von
+vorne — Ausrüstungs-Silhouette (Rucksack-Form, eine Axt) muss in den
+Nano-Banana-Bildplänen oben explizit genannt werden, nicht nur "Kleidung/
+Ausrüstung" pauschal, weil genau bei Rücken-/Seitenansichten der
+ursprüngliche Rucksack-Drift beobachtet wurde. Ergänzt in den Bildplänen
+oben (Image 2 = Kleidung/Ausrüstung, jetzt bewusst auch für Shots 3 und 5
+vermerkt).
+
+**Befund 3 (offen, braucht Entscheidung):** Die 5 Shots ergeben zusammen nur
+~20-27s Gesamtlänge. Das Story-Timing in `story-structure.md` sieht ein
+Fenster von bis zu 90s vor (Journey/Conflict allein 20-60s) — aktuell füllen
+Shots 3+4 diese Phase mit nur ~7-9s. Für eine Meilenstein-Episode wie die
+Pilotfolge ist das knapp. Zwei Optionen:
+- **A)** Als bewusst kurze erste Episode akzeptieren (zulässig nach
+  `capacity-and-cadence.md`, aber unüblich kurz für eine Meilenstein-Episode)
+- **B)** 2-3 weitere Shots in die Journey/Conflict-Phase ergänzen, bevor
+  final freigegeben wird
+
+**Status:** Punkte 1, 2, 4 und 5 bestehen für alle 5 Shots. Punkt 3
+(Retention/Vollständigkeit) bestehen die einzelnen Shots technisch, aber die
+Gesamtlänge unterschreitet das Episoden-Ziel deutlich — **finale Freigabe
+steht daher noch aus, bis Befund 3 entschieden ist.**
