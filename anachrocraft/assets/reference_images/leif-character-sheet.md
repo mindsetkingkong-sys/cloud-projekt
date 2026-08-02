@@ -1,5 +1,9 @@
 # Leif Character Sheet — Generierungsplan
 
+**STATUS: APPROVED.** Bild generiert, geprüft, Wasserzeichen zugeschnitten,
+freigegeben als Master Reference Asset: `leif_character_sheet_v1.jpeg`.
+Verlinkt in `../../characters/leif.md`.
+
 Ziel: eine konsistente visuelle Referenz für Nano Banana und Veo. Basis:
 Master Character Prompt aus `../../characters/leif.md` +
 `leif_reference_official_v1.png` als Identitäts-Anker (Image 1 im

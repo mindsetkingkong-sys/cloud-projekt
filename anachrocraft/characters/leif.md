@@ -38,15 +38,23 @@ zunehmend abgenutzte Kleidung über die Staffel hinweg, siehe
 Kanon aktualisiert, nicht nur stillschweigend in einzelnen Prompts abweichen
 gelassen.
 
-## Referenzbild
+## Referenzbilder (Master Reference Assets)
 
-Kanonisches Referenzfoto: `../assets/reference_images/leif_reference_official_v1.png`
-(stehend im Wald, Axt in der Hand, Canvas-Rucksack mit Schlafmatte — das
-allererste "offizielle" Bild, an dem sich alles orientiert).
+- **Ursprungsfoto:** `../assets/reference_images/leif_reference_official_v1.png`
+  (stehend im Wald, Axt in der Hand, Canvas-Rucksack mit Schlafmatte — das
+  allererste "offizielle" Bild, an dem sich alles orientiert)
+- **Turnaround-Sheet:** `../assets/reference_images/leif_character_sheet_v1.jpeg`
+  (Front / Side Profile / Back View, ein Bild mit drei Panels — siehe Plan
+  in `../assets/reference_images/leif-character-sheet.md`). Geprüft und
+  freigegeben nach Zuschnitt des Wasserzeichens.
+- **Face Reference:** `../assets/reference_images/leif_face_reference_v1.jpeg`
+  (Kopf/Schulter-Portrait für Close-ups, Augenfarbe/Bartdetail verifiziert —
+  siehe Plan in `../assets/reference_images/leif-face-reference.md`). Geprüft
+  und freigegeben nach Zuschnitt des Wasserzeichens.
 
-**Nächster Schritt (noch offen):** ein 3-Ansichten-Charaktersheet (Front, 3/4,
-Profil) aus diesem Referenzbild erzeugen und ebenfalls hier ablegen — siehe
-`../production_rules/nano-banana-workflow.md`.
+Alle drei sind ab jetzt die verbindlichen Bild-Referenzen für Nano-Banana-
+Generierungen (Rollen-Zuweisung siehe
+`../production_rules/nano-banana-workflow.md` Phase 2).
 
 ## Master Character Prompt (fix, für jeden Nano-Banana-Prompt)
 

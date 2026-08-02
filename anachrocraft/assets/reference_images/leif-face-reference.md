@@ -1,9 +1,8 @@
 # Leif Face Reference — Generierungsplan
 
-**STATUS: GEPLANT — Bild existiert noch nicht.** Dies ist ausschließlich ein
-Generierungsplan, kein dokumentiertes Asset. Nicht verlinken oder als
-Referenz verwenden, bis das Bild generiert, geprüft und freigegeben wurde
-(siehe Asset-Reihenfolge in `../../production_rules/nano-banana-workflow.md`).
+**STATUS: APPROVED.** Bild generiert, geprüft (Augenfarbe/Bartdetail
+verifiziert), Wasserzeichen zugeschnitten, freigegeben als Master Reference
+Asset: `leif_face_reference_v1.jpeg`. Verlinkt in `../../characters/leif.md`.
 
 Ziel: Gesichtsidentität für Close-ups und Extreme-Close-ups verifizieren
 (Augenfarbe, Bart-Grauanteil, Hautstruktur) — Details, die das
