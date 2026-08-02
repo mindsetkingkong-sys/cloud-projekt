@@ -25,33 +25,41 @@ Einzel-Pointen.
 - `episodes/` — Shot-Listen pro Episode
 - `assets/reference_images/` — kanonische Referenzbilder für Charakterkonsistenz
 
-## Workflow (6 Phasen)
+## Workflow (11 Phasen)
 
 1. **Story analysieren** — Bogen/Kontext aus `production_rules/story-structure.md`.
 2. **Episode planen** — als Datei in `episodes/` anlegen, nach dem Muster von
    `episodes/episode-01-ankunft.md`.
 3. **Shot-Liste erstellen** — Shot-Größen/Kamerabewegungen/Perspektive aus
    `production_rules/camera-system.md`.
-4. **Bildreferenzen vorbereiten** — Keyframes über
+4. **Shot-Freigabe** — gesamte Shot-Liste gegen
+   `production_rules/shot-approval.md` prüfen, bevor Bildreferenzen oder
+   Prompts entstehen.
+5. **Bildreferenzen vorbereiten** — Keyframes über
    `production_rules/nano-banana-workflow.md`, nie direktes Text-zu-Video ohne
    Bild-Zwischenschritt.
-5. **Veo-Prompts erstellen** — nach `production_rules/veo-workflow.md`. Nutze
+6. **Quality Check** — jeder geplante Prompt durchläuft
+   `production_rules/quality-check.md`, **bevor** er als finaler Veo-Prompt
+   geschrieben und generiert wird.
+7. **Veo-Prompts erstellen** — nach `production_rules/veo-workflow.md`. Nutze
    kurze Veo-Clips entsprechend den verfügbaren Einstellungen. Plane jede
    Szene so, dass sie innerhalb eines einzelnen Clips verständlich und
    visuell umsetzbar ist.
-6. **Quality Check** — jeder Shot durchläuft `production_rules/quality-check.md`
-   vor Freigabe.
-7. **Ergebnisse analysieren und Learnings speichern** — fertiges Video nach
-   `production_rules/video-review-workflow.md` prüfen; neue Erkenntnisse
-   (z.B. neue Fehlermuster, Kanon-Korrekturen) werden in der passenden
-   `production_rules/`-Datei nachgetragen, nicht nur im Gespräch belassen.
-8. **Produktionswissen sichern** — erfolgreiche Prompts nach
-   `production_rules/prompt-versioning.md` als "Approved" dokumentieren,
-   Audio-Learnings nach `production_rules/audio-design.md` festhalten;
-   beides steht künftigen Episoden als Referenz zur Verfügung.
+8. **Video generieren** — erst nachdem Phasen 4 und 6 bestanden sind.
+9. **Schnitt & Audio** — Zusammenschnitt in CapCut, Sounddesign nach
+   `production_rules/audio-design.md`, Ergebnis ist ein fertiges Episoden-Video.
+10. **Ergebnisse analysieren und Learnings speichern** — fertiges Video nach
+    `production_rules/video-review-workflow.md` prüfen; neue Erkenntnisse
+    (z.B. neue Fehlermuster, Kanon-Korrekturen) werden in der passenden
+    `production_rules/`-Datei nachgetragen, nicht nur im Gespräch belassen.
+11. **Produktionswissen sichern** — erfolgreiche Prompts nach
+    `production_rules/prompt-versioning.md` als "Approved" dokumentieren,
+    Audio-Learnings nach `production_rules/audio-design.md` festhalten;
+    beides steht künftigen Episoden als Referenz zur Verfügung.
 
-**Regel:** Niemals direkt fertige Prompts erstellen, ohne vorher Story, Shot
-und Konsistenz zu prüfen (Phasen 1-3 vor Phase 5).
+**Regel:** Niemals direkt fertige Prompts erstellen oder generieren, ohne
+vorher Story, Shot-Liste, Shot-Freigabe (Phase 4) und Quality Check (Phase 6)
+durchlaufen zu haben.
 
 Kontingent-Entscheidungen (was wird neu generiert vs. aus dem B-Roll-Pool
 wiederverwendet) richten sich nach `production_rules/capacity-and-cadence.md`.

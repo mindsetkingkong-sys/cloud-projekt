@@ -4,11 +4,14 @@
 
 Jeder Veo-Prompt enthält diese 7 Elemente, in dieser Reihenfolge:
 
-1. **Shot Type** — Shot-Größe + Kamerabewegung + Perspektive (siehe `camera-system.md`)
+1. **Shot Type** — nur die Einstellungsgröße (Shot-Größe) inkl. Perspektive,
+   z.B. "Close-up, Eye-level" (siehe `camera-system.md`)
 2. **Character** — Master Character Prompt aus `../characters/leif.md`
 3. **Main Action** — eine dominante Hauptaktion (kleine Nebenbewegungen erlaubt)
 4. **Environment** — Ort/Umgebung, konsistent mit `continuity-rules.md`
-5. **Camera Movement** — explizit benannt (siehe `camera-system.md`)
+5. **Camera Movement** — nur die Bewegung, z.B. "Dolly", "Tracking", "Push-in"
+   (siehe `camera-system.md`) — **nicht** die Einstellungsgröße, die steht in
+   Element 1
 6. **Lighting** — aus `lighting-rules.md`, fix für die Episode
 7. **Cinematic Style** — aus dem Style-Block des Master Character Prompts
 

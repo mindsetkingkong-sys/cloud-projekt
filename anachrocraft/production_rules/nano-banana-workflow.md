@@ -30,8 +30,10 @@ exakte Anzahl oder Reihenfolge.
 **Priorität, welche Information bei Konflikt zwischen Referenzbildern gewinnt:**
 1. Charakteridentität
 2. Kleidung/Ausrüstung
-3. Umgebung
-4. Stil
+3. Stil
+
+(Umgebung steht bewusst nicht in dieser Liste — sie wird ausschließlich über
+Text definiert, siehe unten, nicht über ein Bild.)
 
 Umgebung und Handlung werden **nur im Text** beschrieben, nicht über ein
 Referenzbild — sonst überträgt sich die alte Umgebung ungewollt auf die neue

@@ -98,9 +98,11 @@ Licht, leichter Bodennebel, kühle Farbtemperatur.
 - Länge: 3-4s
 - Hauptaktion: Leif bleibt abrupt stehen, Kopf leicht geneigt, lauscht
   angespannt auf ein unbekanntes Geräusch oder eine Spur außerhalb des
-  Bildes — was es ist, bleibt offen
+  Bildes — was es ist, bleibt offen; der Griff um die Axt in seiner Hand
+  lockert sich währenddessen unbewusst leicht
 
-**Shot 7** — Journey/Conflict, NEU (20-60s) *(in dieser Runde angepasst)*
+**Shot 7** — Journey/Conflict, NEU (20-60s) *(Axt-Kontinuität zu Shot 5
+  korrigiert)*
 - Zweck: direkte Reaktion auf Shot 6 — Leif reagiert auf das unbekannte
   Geräusch, Spannung entsteht durch die vorsichtige, wachsame Handlung
   selbst, nicht nur durch gezeigte Ausrüstung
@@ -108,9 +110,11 @@ Licht, leichter Bodennebel, kühle Farbtemperatur.
 - Kamerabewegung: Push-in (minimal, begleitet die Handbewegung)
 - Perspektive: Low angle (auf Hand/Axt)
 - Länge: 2-3s
-- Hauptaktion: Leif greift vorsichtig, aber bestimmt nach dem Griff seiner
-  Axt — direkte, unmittelbare Reaktion auf das Geräusch aus Shot 6, nicht
-  eine bereits ruhende, angespannte Hand
+- Hauptaktion: Leifs Hand umschließt die bereits gehaltene Axt erneut
+  fester — direkte, unmittelbare Reaktion auf das Geräusch aus Shot 6.
+  Die Axt war durchgehend in der Hand (Kanon aus Shot 5: "Axt bleibt fest
+  in der tragenden Hand"), nur der Griff hatte sich in Shot 6 gelockert —
+  kein Loslassen/Wiederaufnehmen der Axt, nur eine Griff-Änderung
 
 **Shot 8** — Payoff (60-90s)
 - Zweck: Payoff/Cliffhanger — emotionaler Abschluss, offene Frage
@@ -180,11 +184,11 @@ abgeschlossen ist — aktuell noch offen (siehe `../characters/leif.md`).
 **Shot 6 (NEU)**
 - Image 1 = Gesichtsidentität (Front-Ansicht, da Gesichtsausdruck zentral)
 - Image 2 = Kleidung/Ausrüstung
-- Text: Close-up, Leif bleibt abrupt stehen, Kopf leicht zur Seite geneigt, angespannter/lauschender Ausdruck, kein sichtbarer Auslöser oder Hinweis auf die Quelle im Bild (bewusst uneindeutig), bewölkt-diffuses Licht, kühle Farbtemperatur
+- Text: Close-up, Leif bleibt abrupt stehen, Kopf leicht zur Seite geneigt, angespannter/lauschender Ausdruck, kein sichtbarer Auslöser oder Hinweis auf die Quelle im Bild (bewusst uneindeutig), Griff um die Axt lockert sich leicht, bewölkt-diffuses Licht, kühle Farbtemperatur
 
-**Shot 7 (NEU)** *(in dieser Runde angepasst)*
+**Shot 7 (NEU)** *(Axt-Kontinuität zu Shot 5 korrigiert)*
 - Image 2 = Kleidung/Ausrüstung (Hand- und Axt-Detail aus Referenzfoto)
-- Text: Extreme Close-up, Hand bewegt sich gezielt zum Axt-Griff (dunkles Holz, abgenutzter Stahlkopf) und greift vorsichtig, aber bestimmt zu — sichtbare Reaktionsbewegung, nicht bereits ruhende Hand; kein Gesicht im Bild, diffuses Licht von oben, Bodennebel im unscharfen Hintergrund
+- Text: Extreme Close-up, Hand umschließt den bereits gehaltenen Axt-Griff (dunkles Holz, abgenutzter Stahlkopf) erneut fester — die Axt befindet sich durchgehend in der Hand, kein Loslassen/Greifen von außen; kein Gesicht im Bild, diffuses Licht von oben, Bodennebel im unscharfen Hintergrund
 
 **Shot 8**
 - Image 1 = Gesichtsidentität
@@ -272,7 +276,7 @@ identisch wie bei Shot 4).
 4. Medium Shot — Leif verlässt den Pfad und betritt unberührtes Moos *(Journey, angepasst)*
 5. Medium Shot — Leif steigt über einen umgestürzten Baumstamm *(Journey, NEU)*
 6. Close-up — Leif hält abrupt inne, lauscht auf ein unbekanntes Geräusch *(Journey, NEU)*
-7. Extreme Close-up — Leif greift vorsichtig nach seiner Axt, direkte Reaktion auf Shot 6 *(Journey, NEU, angepasst)*
+7. Extreme Close-up — Leifs Hand umschließt die bereits gehaltene Axt erneut fester, direkte Reaktion auf Shot 6 *(Journey, NEU, Axt-Kontinuität korrigiert)*
 8. Medium Shot, Over-the-shoulder — Leif blickt auf den Fluss *(Payoff)*
 
 Gesamtlänge: ~31-42s. Weiterhin keine finalen Veo-Prompts erstellt — Freigabe
