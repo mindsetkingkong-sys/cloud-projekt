@@ -8,7 +8,7 @@ errichten, bevor der erste Winter kommt (Staffel-1-Spannungsbogen).
 
 ## Kanonisches Aussehen (konstant innerhalb einer Episode)
 
-- **Alter:** Ende 30 / Anfang 40
+- **Alter:** 28 Jahre *(aktualisiert; vorheriger Wert "Ende 30/Anfang 40" ist veraltet — Begründung: passt besser zum geplanten AnachroCraft-Konzept und zur langfristigen Charakterentwicklung über die Staffel)*
 - **Statur:** groß, breite Schultern, athletisch-durchtrainiert
 - **Gesicht:** markantes Kinn, wettergegerbte Haut, ausgeprägte Brauen, ruhiger,
   stoischer Ausdruck, eisblau-graue Augen
@@ -34,7 +34,7 @@ Bart-Grauanteil schwankte stark. Diese Liste ist die verbindliche Auflösung
 dieser Widersprüche. Diese Eigenschaften bleiben innerhalb einer Episode
 konstant, außer eine bewusste Story-Entwicklung benötigt eine Änderung (z.B.
 zunehmend abgenutzte Kleidung über die Staffel hinweg, siehe
-`../production_rules/continuity_rules.md`). Eine solche Änderung wird hier im
+`../production_rules/continuity-rules.md`). Eine solche Änderung wird hier im
 Kanon aktualisiert, nicht nur stillschweigend in einzelnen Prompts abweichen
 gelassen.
 
@@ -52,7 +52,7 @@ Profil) aus diesem Referenzbild erzeugen und ebenfalls hier ablegen — siehe
 
 ```
 LEIF — CHARACTER LOCK:
-A rugged Scandinavian man in his late 30s to early 40s, tall, broad-shouldered, athletic-lean build.
+A rugged Scandinavian man, around 28 years old, tall, broad-shouldered, athletic-lean build.
 Face: strong jawline, weathered sun-tanned skin, prominent brow, calm stoic expression, ice-blue/grey eyes.
 Hair: shoulder-length straight dirty-blond hair, center-parted, natural texture, always worn open — never a hat or beanie.
 Beard: full medium-length beard, dirty-blond with light grey strands at the chin, well-defined but rugged.

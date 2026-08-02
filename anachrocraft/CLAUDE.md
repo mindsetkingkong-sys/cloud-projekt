@@ -21,6 +21,7 @@ Einzel-Pointen.
 - `production_rules/` — feste technische und kreative Produktionsregeln
   (Kamera-System, Nano-Banana-Workflow, Veo-Workflow, Kapazitäts-/Kadenz-Strategie,
   Story-Struktur)
+- `shot_library/` — bewährte, wiederverwendbare Kamera-Shot-Vorlagen
 - `episodes/` — Shot-Listen pro Episode
 - `assets/reference_images/` — kanonische Referenzbilder für Charakterkonsistenz
 
@@ -38,8 +39,14 @@ Einzel-Pointen.
    kurze Veo-Clips entsprechend den verfügbaren Einstellungen. Plane jede
    Szene so, dass sie innerhalb eines einzelnen Clips verständlich und
    visuell umsetzbar ist.
-6. **Quality Check** — jeder Shot durchläuft `production_rules/quality_check.md`
+6. **Quality Check** — jeder Shot durchläuft `production_rules/quality-check.md`
    vor Freigabe.
+7. **Ergebnisse analysieren und Learnings speichern** — neue Erkenntnisse
+   (z.B. neue Fehlermuster, Kanon-Korrekturen) werden in der passenden
+   `production_rules/`-Datei nachgetragen, nicht nur im Gespräch belassen.
+
+**Regel:** Niemals direkt fertige Prompts erstellen, ohne vorher Story, Shot
+und Konsistenz zu prüfen (Phasen 1-3 vor Phase 5).
 
 Kontingent-Entscheidungen (was wird neu generiert vs. aus dem B-Roll-Pool
 wiederverwendet) richten sich nach `production_rules/capacity-and-cadence.md`.

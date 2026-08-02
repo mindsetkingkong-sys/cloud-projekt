@@ -18,7 +18,7 @@ Umgebung.
 ## Umgebung
 
 Nordischer Kiefernwald mit nahegelegenem Fluss. Fixe Episoden-Werte (siehe
-`../production_rules/lighting_rules.md`): früher Vormittag, bewölkt-diffuses
+`../production_rules/lighting-rules.md`): früher Vormittag, bewölkt-diffuses
 Licht, leichter Bodennebel, kühle Farbtemperatur.
 
 ## Shot-Liste

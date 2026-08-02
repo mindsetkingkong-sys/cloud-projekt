@@ -15,7 +15,7 @@ light mist"), in allen Shots dieser Episode identisch übernehmen.
 
 ## Lichtstimmung
 Sonnenrichtung und Farbtemperatur werden als Teil des Tageszeit-Werts mit
-festgelegt (siehe `lighting_rules.md` für Details) — nicht als separate,
+festgelegt (siehe `lighting-rules.md` für Details) — nicht als separate,
 möglicherweise widersprüchliche Angabe.
 
 ## Umgebung

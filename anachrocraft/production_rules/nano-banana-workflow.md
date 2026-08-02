@@ -27,6 +27,12 @@ Je nach Bedarf können auch nur zwei Bilder mit Rollen (z.B. Gesicht +
 Kleidung) genügen — entscheidend ist die klare Rollenzuweisung, nicht die
 exakte Anzahl oder Reihenfolge.
 
+**Priorität, welche Information bei Konflikt zwischen Referenzbildern gewinnt:**
+1. Charakteridentität
+2. Kleidung/Ausrüstung
+3. Umgebung
+4. Stil
+
 Umgebung und Handlung werden **nur im Text** beschrieben, nicht über ein
 Referenzbild — sonst überträgt sich die alte Umgebung ungewollt auf die neue
 Szene.

@@ -53,10 +53,10 @@ verwendet, sondern immer zusätzlich zu Shot Size und Movement.
 
 ## Prompt-Formel (fix für jeden Shot)
 
-`[Shot-Größe] + [Kamerabewegung] + [Perspektive] + [Objektiv/Look] + [Licht aus lighting_rules.md] + [dominante Hauptaktion, kleine Nebenbewegungen erlaubt]`
+`[Shot-Größe] + [Kamerabewegung] + [Perspektive] + [Objektiv/Look] + [Licht aus lighting-rules.md] + [dominante Hauptaktion, kleine Nebenbewegungen erlaubt]`
 
 ## Regel
 
 Jeder Veo-Prompt braucht **explizit** eine Shot-Größe und eine Kamerabewegung
 — nie nur eine mm-Zahl oder "Kamera bewegt sich" ohne Präzisierung. Ein Prompt
-ohne beides gilt als nicht produktionsreif (siehe `quality_check.md`, Punkt 3).
+ohne beides gilt als nicht produktionsreif (siehe `quality-check.md`, Punkt 3).

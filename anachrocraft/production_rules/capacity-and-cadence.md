@@ -20,9 +20,9 @@ Produktionstempo richtet sich nach der Kapazität, nicht umgekehrt.
 
 ## Priorität (keine festen Produktionszahlen)
 
-1. **Qualität** — kein Clip wird veröffentlicht, der `quality_check.md` nicht
+1. **Qualität** — kein Clip wird veröffentlicht, der `quality-check.md` nicht
    besteht.
-2. **Konsistenz** — Charakter-Kanon und Kontinuität (`continuity_rules.md`)
+2. **Konsistenz** — Charakter-Kanon und Kontinuität (`continuity-rules.md`)
    gehen vor neuem Tempo.
 3. **Regelmäßige Produktion** — lieber verlässlich in kleineren Schritten
    posten als unregelmäßig in großen.

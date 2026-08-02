@@ -2,14 +2,17 @@
 
 Keine lange generische Negativ-Prompt-Liste. Stattdessen: eine Fehler-Datenbank
 nach Kategorie, auf die beim Prüfen eines generierten Shots konkret geachtet
-wird (siehe `quality_check.md`, Punkt 5).
+wird (siehe `quality-check.md`, Punkt 5).
 
 ## Charakter
 - **Gesicht verändert sich** — Gesichtszüge weichen vom Referenzbild/-sheet ab
-- **Kleidung wechselt** — Farbe/Schnitt weicht vom Master-Prompt ab (auch
-  Details wie Knopfanzahl, Ärmelstand)
-- **Ausrüstung verschwindet** — Rucksack oder Axt fehlen oder ändern sich
-  gegenüber dem Kanon (auch: zweite Axt statt einer)
+- **Kleidung wechselt ohne Erklärung** — Farbe/Schnitt weicht vom Master-Prompt
+  ab (auch Details wie Knopfanzahl, Ärmelstand); eine Änderung ist nur gültig,
+  wenn sie als bewusste Story-Entwicklung im Kanon dokumentiert ist (siehe
+  `../characters/leif.md`)
+- **Ausrüstung verschwindet oder erscheint ohne Ursache** — Rucksack oder Axt
+  fehlen, ändern sich gegenüber dem Kanon (auch: zweite Axt statt einer), oder
+  es taucht ein zusätzlicher Gegenstand ohne erklärten Grund auf
 
 ## Physik
 - **Hände falsch** — zusätzliche Finger/falsche Handanatomie, besonders bei

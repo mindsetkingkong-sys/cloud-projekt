@@ -4,10 +4,13 @@
 
 | Phase | Zeit |
 |---|---|
-| Hook | 0-3s |
-| Setup | 3-15s |
-| Challenge | 15-45s |
-| Payoff | 45-60s |
+| Hook | 0-5s |
+| Setup | 5-20s |
+| Journey/Conflict | 20-60s |
+| Payoff | 60-90s |
+
+*(aktualisiert auf bis zu 90s, passend zum Ziel "Clips über eine Minute";
+vorheriger Wert war auf 60s begrenzt)*
 
 ## Jede Episode braucht
 

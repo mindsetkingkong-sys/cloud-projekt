@@ -12,7 +12,7 @@ hinterher reparieren.
 - [ ] Rucksack = Canvas mit Schlafmatte (keine andere Variante)?
 - [ ] Genau eine Axt, keine zweite?
 - [ ] Keine Mütze/Beanie?
-- [ ] Kleidungszustand passt zum aktuellen Story-Zeitpunkt (siehe `continuity_rules.md`)?
+- [ ] Kleidungszustand passt zum aktuellen Story-Zeitpunkt (siehe `continuity-rules.md`)?
 
 ## 3. Kamera-Logik
 - [ ] Einstellungsgröße explizit benannt (wide/close-up/...), nicht nur eine mm-Zahl?
@@ -25,11 +25,11 @@ hinterher reparieren.
 
 ## 5. Artefakt-Risiken
 - [ ] Bildausschnitt so gewählt, dass ein mögliches Wasserzeichen/Icon in der Ecke nicht mitten im relevanten Bildbereich landet?
-- [ ] Prompt enthält keine Formulierung, die zu bekannten Fehlermustern führt (siehe `negative_patterns.md`)?
+- [ ] Prompt enthält keine Formulierung, die zu bekannten Fehlermustern führt (siehe `negative-patterns.md`)?
 
 ## 6. Veo 3.1 Eignungsprüfung
 - [ ] Clip-Länge entspricht den aktuell verfügbaren Einstellungen und ist so gewählt, dass die Szene innerhalb dieses einen Clips verständlich und visuell umsetzbar ist?
-- [ ] Kein Timestamp-Multi-Beat für Story-Shots (verworfen, siehe `negative_patterns.md`)?
+- [ ] Kein Timestamp-Multi-Beat für Story-Shots (verworfen, siehe `negative-patterns.md`)?
 - [ ] Seitenverhältnis 9:16 explizit gesetzt?
 
 ## 7. Story-Zweck
