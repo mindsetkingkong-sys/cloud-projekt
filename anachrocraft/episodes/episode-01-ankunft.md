@@ -63,15 +63,20 @@ Licht, leichter Bodennebel, kühle Farbtemperatur.
 - Länge: 5-6s
 - Hauptaktion: Leif läuft weiter in den Wald hinein
 
-**Shot 4** — Journey/Conflict (20-60s)
-- Zweck: *(im Quality Check verbessert)* erster physischer
-  Kontakt mit unberührtem Terrain — visualisiert den Übergang von
-  Zivilisation zu echter Wildnis
-- Shot-Größe: Extreme Close-up
-- Kamerabewegung: Push-in (minimal)
-- Perspektive: Low angle (Bodennähe)
-- Länge: 2-3s
-- Hauptaktion: Stiefel treten von festem Pfad auf unberührtes Moos und Laub
+**Shot 4** — Journey/Conflict (20-60s) *(in dieser Runde angepasst)*
+- Zweck: Übergang vom bekannten Pfad ins unbekannte Terrain — zeigt
+  Verlassen des Pfads, Betreten der unberührten Wildnis, Atmosphäre und
+  Fortschritt (kein reiner Naturdetail-Shot mehr)
+- Shot-Größe: Medium Shot *(vorher Extreme Close-up — zu eng, um Atmosphäre
+  und Fortschritt zu zeigen)*
+- Kamerabewegung: Tracking (niedrig, seitlich, begleitet den Schritt)
+- Perspektive: Low angle (Bodennähe, aber mit Umgebung im Bild)
+- Länge: 4-6s *(vorher 2-3s — Hinweis: der frühere Veo-Mindestlängen-Fix aus
+  den Tabellen oben gilt für diese Version nicht mehr, da 4-6s bereits
+  nativ generierbar ist)*
+- Hauptaktion: Leif verlässt den festen Waldpfad und betritt unberührtes
+  Moos und Laub, Bodennebel zieht um seine Stiefel, gedämpftes Licht fällt
+  durch die Bäume
 
 **Shot 5** — Journey/Conflict, NEU (20-60s)
 - Zweck: kleine Herausforderung — zeigt physischen Effort, die Wildnis
@@ -84,25 +89,28 @@ Licht, leichter Bodennebel, kühle Farbtemperatur.
   blockiert
 
 **Shot 6** — Journey/Conflict, NEU (20-60s)
-- Zweck: Entdeckungsmoment — baut Spannung auf das Fluss-Reveal auf, ohne
-  es schon zu zeigen
+- Zweck: Entdeckungsmoment — ein unbekanntes Geräusch/eine Spur, bewusst
+  nicht als Wasserrauschen identifiziert, um Ungewissheit statt Vorwegnahme
+  des Fluss-Reveals zu erzeugen
 - Shot-Größe: Close-up
 - Kamerabewegung: Push-in (langsam)
 - Perspektive: Eye-level
 - Länge: 3-4s
-- Hauptaktion: Leif bleibt stehen, Kopf leicht geneigt, lauscht auf ein
-  entferntes Geräusch außerhalb des Bildes (Wasserrauschen, noch nicht
-  sichtbar)
+- Hauptaktion: Leif bleibt abrupt stehen, Kopf leicht geneigt, lauscht
+  angespannt auf ein unbekanntes Geräusch oder eine Spur außerhalb des
+  Bildes — was es ist, bleibt offen
 
-**Shot 7** — Journey/Conflict, NEU (20-60s)
-- Zweck: nonverbale Anspannung unmittelbar vor dem Reveal — setzt die in
-  `../characters/leif.md` festgelegte Regel um, Emotion über Körpersprache
-  statt Dialog zu zeigen
+**Shot 7** — Journey/Conflict, NEU (20-60s) *(in dieser Runde angepasst)*
+- Zweck: direkte Reaktion auf Shot 6 — Leif reagiert auf das unbekannte
+  Geräusch, Spannung entsteht durch die vorsichtige, wachsame Handlung
+  selbst, nicht nur durch gezeigte Ausrüstung
 - Shot-Größe: Extreme Close-up
-- Kamerabewegung: static (minimaler Push-in)
+- Kamerabewegung: Push-in (minimal, begleitet die Handbewegung)
 - Perspektive: Low angle (auf Hand/Axt)
 - Länge: 2-3s
-- Hauptaktion: Leifs Hand greift den Axt-Griff fester
+- Hauptaktion: Leif greift vorsichtig, aber bestimmt nach dem Griff seiner
+  Axt — direkte, unmittelbare Reaktion auf das Geräusch aus Shot 6, nicht
+  eine bereits ruhende, angespannte Hand
 
 **Shot 8** — Payoff (60-90s)
 - Zweck: Payoff/Cliffhanger — emotionaler Abschluss, offene Frage
@@ -115,12 +123,14 @@ Licht, leichter Bodennebel, kühle Farbtemperatur.
 Alle Shots teilen die fixen Episoden-Werte aus "Umgebung" oben (früher
 Vormittag, bewölkt-diffus, Bodennebel, kühle Farbtemperatur).
 
-**Geplante Gesamtlänge (aktualisiert):** vorher ~20-27s (5 Shots), jetzt
-~29-40s (8 Shots) — die Journey/Conflict-Phase ist damit deutlich stärker
-ausgearbeitet (von ~7-9s auf ~18-25s). Hinweis zur Transparenz: das liegt
-weiterhin unter dem ursprünglichen Ziel von "Clips über eine Minute" bzw.
-dem 90s-Fenster aus `story-structure.md` — das war mit "3 zusätzliche
-Shots" so vorgegeben, kein Automatismus meinerseits auf 60-90s aufzufüllen.
+**Geplante Gesamtlänge (aktualisiert):** vorher ~20-27s (5 Shots), dann
+~29-40s (8 Shots), nach Anpassung von Shot 4 (2-3s → 4-6s) jetzt **~31-42s**.
+Die Journey/Conflict-Phase ist damit deutlich stärker ausgearbeitet (von
+~7-9s auf ~20-27s). Hinweis zur Transparenz: das liegt weiterhin unter dem
+ursprünglichen Ziel von "Clips über eine Minute" bzw. dem 90s-Fenster aus
+`story-structure.md` — das war mit "3 zusätzliche Shots" bzw. den zwei
+gezielten Anpassungen so vorgegeben, kein Automatismus meinerseits auf
+60-90s aufzufüllen.
 
 ## Quality-Check-Ergebnisse (gegen `../production_rules/quality-check.md`)
 
@@ -158,9 +168,9 @@ abgeschlossen ist — aktuell noch offen (siehe `../characters/leif.md`).
 - Image 2 = Kleidung/Ausrüstung
 - Text: Wide Shot von hinten, High-angle-Perspektive, Leif klein im Bild gegenüber hohen Kiefern, Bodennebel, kühles Licht
 
-**Shot 4**
-- Image 2 = Kleidung/Ausrüstung (Stiefel-Detail aus Referenzfoto)
-- Text: Extreme Close-up, Bodenhöhe, Stiefel treten von Waldpfad auf Moos/Laub, kein Gesicht im Bild, diffuses Licht von oben
+**Shot 4** *(in dieser Runde angepasst)*
+- Image 2 = Kleidung/Ausrüstung (Stiefel- und Hosen-Detail aus Referenzfoto)
+- Text: Medium Shot, niedrige Kamera, Leif verlässt einen festen Waldpfad und betritt unberührtes Moos/Laub, Bodennebel zieht um die Stiefel, gedämpftes Licht durch Bäume, kein Gesicht im Bild, Umgebung/Atmosphäre sichtbar im Bildausschnitt
 
 **Shot 5 (NEU)**
 - Image 1 = Gesichtsidentität
@@ -170,11 +180,11 @@ abgeschlossen ist — aktuell noch offen (siehe `../characters/leif.md`).
 **Shot 6 (NEU)**
 - Image 1 = Gesichtsidentität (Front-Ansicht, da Gesichtsausdruck zentral)
 - Image 2 = Kleidung/Ausrüstung
-- Text: Close-up, Leif bleibt stehen, Kopf leicht zur Seite geneigt, aufmerksamer/lauschender Ausdruck, kein sichtbarer Auslöser im Bild, bewölkt-diffuses Licht, kühle Farbtemperatur
+- Text: Close-up, Leif bleibt abrupt stehen, Kopf leicht zur Seite geneigt, angespannter/lauschender Ausdruck, kein sichtbarer Auslöser oder Hinweis auf die Quelle im Bild (bewusst uneindeutig), bewölkt-diffuses Licht, kühle Farbtemperatur
 
-**Shot 7 (NEU)**
+**Shot 7 (NEU)** *(in dieser Runde angepasst)*
 - Image 2 = Kleidung/Ausrüstung (Hand- und Axt-Detail aus Referenzfoto)
-- Text: Extreme Close-up, Hand greift den Axt-Griff (dunkles Holz, abgenutzter Stahlkopf) fester, kein Gesicht im Bild, diffuses Licht von oben, Bodennebel im unscharfen Hintergrund
+- Text: Extreme Close-up, Hand bewegt sich gezielt zum Axt-Griff (dunkles Holz, abgenutzter Stahlkopf) und greift vorsichtig, aber bestimmt zu — sichtbare Reaktionsbewegung, nicht bereits ruhende Hand; kein Gesicht im Bild, diffuses Licht von oben, Bodennebel im unscharfen Hintergrund
 
 **Shot 8**
 - Image 1 = Gesichtsidentität
@@ -243,15 +253,27 @@ Retention-Check individuell. Alle drei bestehen alle 5 Kriterien; die zwei
 Bildplan benannt; Veo-Mindestlänge-Fix aus `camera-system.md` greift
 identisch wie bei Shot 4).
 
+## Anpassungen nach Nutzerfreigabe (vor Veo-Prompt-Erstellung)
+
+1. **Shot 4** — von reinem Naturdetail (Extreme Close-up, 2-3s) zu
+   Übergangsmoment mit Atmosphäre und Fortschritt (Medium Shot, Tracking,
+   4-6s) erweitert.
+2. **Shot 7** — von statisch angespannter Hand zu aktiver, direkter Reaktion
+   auf das Geräusch aus Shot 6 (gezielte Greifbewegung statt bereits
+   ruhender Griff) präzisiert; Shot 6 selbst bewusst uneindeutig gehalten
+   (kein Wasserrauschen mehr benannt), damit die Kausalkette Geräusch →
+   Reaktion klar und die Spannung ungelöst bleibt.
+
 ## Finale Shot-Reihenfolge (8 Shots, freigegeben)
 
 1. Close-up — Leif blickt in die Ferne *(Hook)*
 2. Establishing Shot — Leif betritt den Wald *(Setup)*
 3. Wide Shot, High angle — Leif läuft tiefer in den Wald *(Journey)*
-4. Extreme Close-up — Stiefel treten auf unberührtes Moos *(Journey)*
+4. Medium Shot — Leif verlässt den Pfad und betritt unberührtes Moos *(Journey, angepasst)*
 5. Medium Shot — Leif steigt über einen umgestürzten Baumstamm *(Journey, NEU)*
-6. Close-up — Leif hält inne und lauscht *(Journey, NEU)*
-7. Extreme Close-up — Hand greift Axt-Griff fester *(Journey, NEU)*
+6. Close-up — Leif hält abrupt inne, lauscht auf ein unbekanntes Geräusch *(Journey, NEU)*
+7. Extreme Close-up — Leif greift vorsichtig nach seiner Axt, direkte Reaktion auf Shot 6 *(Journey, NEU, angepasst)*
 8. Medium Shot, Over-the-shoulder — Leif blickt auf den Fluss *(Payoff)*
 
-Gesamtlänge: ~29-40s. Weiterhin keine finalen Veo-Prompts erstellt.
+Gesamtlänge: ~31-42s. Weiterhin keine finalen Veo-Prompts erstellt — Freigabe
+für die Prompt-Erstellung steht noch aus.
