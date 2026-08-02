@@ -41,7 +41,8 @@ Einzel-Pointen.
    visuell umsetzbar ist.
 6. **Quality Check** — jeder Shot durchläuft `production_rules/quality-check.md`
    vor Freigabe.
-7. **Ergebnisse analysieren und Learnings speichern** — neue Erkenntnisse
+7. **Ergebnisse analysieren und Learnings speichern** — fertiges Video nach
+   `production_rules/video-review-workflow.md` prüfen; neue Erkenntnisse
    (z.B. neue Fehlermuster, Kanon-Korrekturen) werden in der passenden
    `production_rules/`-Datei nachgetragen, nicht nur im Gespräch belassen.
 
