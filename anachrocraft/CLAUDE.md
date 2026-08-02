@@ -1,0 +1,59 @@
+# AnachroCraft — AI Cinematic Production System
+
+Dieses Verzeichnis ist ein eigenständiges Content-Produktionssystem, unabhängig vom
+Grilluxe-Küchenkonfigurator im Rest dieses Repos. Es dient der Produktion einer
+seriellen, KI-generierten Video-Serie um den Charakter **Leif**.
+
+## Projekt-Kurzfassung
+
+Leif ist ein Skandinavier, der sich von Grund auf ein Leben in der Wildnis aufbaut.
+Die Serie erzählt seine Geschichte über 30-60 Episoden hinweg, photorealistisch,
+ohne Dialog/Worte (nur Ambient-Sound und Musik), veröffentlicht auf TikTok,
+Instagram Reels und YouTube Shorts.
+
+Ziel: Zuschauer sollen dem Fortschritt einer echten Baustelle/eines echten Lebens
+folgen wollen — Serialisierung über Fortschritt und Cliffhanger, nicht über
+Einzel-Pointen.
+
+## Ordnerstruktur
+
+- `characters/` — Charakter-Bibeln (Aussehen, Master-Prompts, Referenzbild-Regeln)
+- `production_rules/` — feste technische und kreative Produktionsregeln
+  (Kamera-System, Nano-Banana-Workflow, Veo-Workflow, Kapazitäts-/Kadenz-Strategie,
+  Story-Struktur)
+- `episodes/` — Shot-Listen pro Episode
+- `assets/reference_images/` — kanonische Referenzbilder für Charakterkonsistenz
+
+## Wie dieses System benutzt wird
+
+1. Vor jeder neuen Generierung: `characters/leif.md` für den Master-Prompt und
+   `production_rules/camera-system.md` für die Shot-Formel konsultieren.
+2. Jeder Shot läuft über die Zwei-Stufen-Pipeline aus
+   `production_rules/nano-banana-workflow.md` +
+   `production_rules/veo-workflow.md` — nie direktes Text-zu-Video ohne
+   Bild-Zwischenschritt.
+3. Kontingent-Entscheidungen (was wird neu generiert vs. aus dem B-Roll-Pool
+   wiederverwendet) richten sich nach `production_rules/capacity-and-cadence.md`.
+4. Neue Episoden werden als Datei in `episodes/` angelegt, nach dem Muster von
+   `episodes/episode-01-ankunft.md`.
+
+## Verifikationsstand (wichtig für Vertrauenswürdigkeit)
+
+Technische Aussagen zu Nano Banana Pro / Veo 3.1 in diesem System sind wie folgt
+gekennzeichnet:
+- ✅ **belegt** — gegen offizielle Google-Dokumentation geprüft
+- ⚠️ **Konvention** — Fotografie-/Prompt-Engineering-Standard, nicht
+  tool-spezifisch verifiziert
+- ❓ **unklar** — muss in der Praxis (Nano Banana/Veo direkt) getestet werden
+
+Diese Kennzeichnung steht direkt in den jeweiligen Regel-Dateien und sollte bei
+jeder Ergänzung beibehalten werden.
+
+## Nicht-Ziele
+
+- Keine Produktion über Higgsfield (bewusste Entscheidung des Nutzers, aus
+  Kontingent-/Kostengründen).
+- Kein automatisiertes Publishing (Stand jetzt) — Veröffentlichung erfolgt
+  manuell durch den Nutzer, nach eigener Qualitätskontrolle.
+- Schnitt erfolgt in CapCut durch den Nutzer selbst; dieses System liefert
+  Schnittlisten/Shot-Reihenfolgen, keine automatisierte Schnitt-Steuerung.
