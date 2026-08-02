@@ -1,5 +1,10 @@
 # Leif Face Reference — Generierungsplan
 
+**STATUS: GEPLANT — Bild existiert noch nicht.** Dies ist ausschließlich ein
+Generierungsplan, kein dokumentiertes Asset. Nicht verlinken oder als
+Referenz verwenden, bis das Bild generiert, geprüft und freigegeben wurde
+(siehe Asset-Reihenfolge in `../../production_rules/nano-banana-workflow.md`).
+
 Ziel: Gesichtsidentität für Close-ups und Extreme-Close-ups verifizieren
 (Augenfarbe, Bart-Grauanteil, Hautstruktur) — Details, die das
 Turnaround-Sheet (`leif-character-sheet.md`) auf Ganzkörper-Distanz nicht

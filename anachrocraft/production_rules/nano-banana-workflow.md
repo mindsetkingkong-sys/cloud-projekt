@@ -1,5 +1,16 @@
 # Nano Banana Workflow
 
+## Asset-Reihenfolge (verbindlich für alle Referenzbilder)
+
+1. Asset generieren
+2. Asset prüfen
+3. Asset freigeben
+4. Erst danach Dokumentation aktualisieren und verlinken
+
+Ein Plan-Dokument für ein noch nicht existierendes Asset ist erlaubt, muss
+aber eindeutig als "STATUS: GEPLANT — Bild existiert noch nicht" markiert
+sein und darf nirgends verlinkt werden, bis Schritt 3 abgeschlossen ist.
+
 ## Phase 1 — Charakter-Referenzen vorbereiten
 
 - Basis: `characters/leif.md` (Master Character Prompt) +
