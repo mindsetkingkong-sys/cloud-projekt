@@ -20,7 +20,7 @@ Einzel-Pointen.
 - `characters/` — Charakter-Bibeln (Aussehen, Master-Prompts, Referenzbild-Regeln)
 - `production_rules/` — feste technische und kreative Produktionsregeln
   (Kamera-System, Nano-Banana-Workflow, Veo-Workflow, Kapazitäts-/Kadenz-Strategie,
-  Story-Struktur)
+  Story-Struktur, Video-Review, Audio-Design, Prompt-Versionierung)
 - `shot_library/` — bewährte, wiederverwendbare Kamera-Shot-Vorlagen
 - `episodes/` — Shot-Listen pro Episode
 - `assets/reference_images/` — kanonische Referenzbilder für Charakterkonsistenz
@@ -45,6 +45,10 @@ Einzel-Pointen.
    `production_rules/video-review-workflow.md` prüfen; neue Erkenntnisse
    (z.B. neue Fehlermuster, Kanon-Korrekturen) werden in der passenden
    `production_rules/`-Datei nachgetragen, nicht nur im Gespräch belassen.
+8. **Produktionswissen sichern** — erfolgreiche Prompts nach
+   `production_rules/prompt-versioning.md` als "Approved" dokumentieren,
+   Audio-Learnings nach `production_rules/audio-design.md` festhalten;
+   beides steht künftigen Episoden als Referenz zur Verfügung.
 
 **Regel:** Niemals direkt fertige Prompts erstellen, ohne vorher Story, Shot
 und Konsistenz zu prüfen (Phasen 1-3 vor Phase 5).
