@@ -105,6 +105,17 @@ Längen-Entscheidungen) ist real mit ~60-65s zu rechnen — die 60s-Pflicht für
 Meilenstein-Episoden sollte damit sicher erreicht werden, aber das nach der
 ersten Schnittrunde nochmal verifizieren.
 
-**Noch nicht freigegeben** — braucht Phase 4 (Shot-Freigabe gegen
-`../production_rules/shot-approval.md`), bevor Bildreferenzen/Prompts
-entstehen.
+## Shot-Freigabe (Phase 4, bestanden)
+
+Geprüft gegen `../production_rules/shot-approval.md`, alle 5 Punkte
+bestanden. Präzisierung zu Punkt 4 (Visual Continuity/Zeitsprung):
+
+- **Shots 1-7:** spätnachmittägliches, klar-diffuses Licht
+- **Shot 8:** Übergang (Licht beginnt sichtbar zu wechseln)
+- **Shots 9-10:** Dämmerlicht
+
+Diese Zuordnung ist verbindlich für die Nano-Banana-Bildpläne und
+Veo-Prompts, damit der Zeitsprung nicht uneindeutig bleibt.
+
+**Episode 2 Shot-Liste: freigegeben.** Nächster Schritt: Phase 5
+(Bildreferenzen/Nano-Banana-Bildpläne).
