@@ -21,6 +21,18 @@ abgestimmt (AI-Kennzeichnung, keine Fake-Real-Behauptungen).
   die Transparenzpflicht aus `compliance.md` mit ab, ersetzt aber nicht das
   plattformeigene "AI-generated"-Label vor jeder Veröffentlichung.
 
+## Plattform-Handles
+
+| Plattform | Anzeigename | Handle |
+|---|---|---|
+| TikTok | Leif Alone | @leifalone |
+| YouTube | Leif Alone | @leifalone.official |
+| Instagram | Leif Alone | noch offen |
+
+Handle weicht auf YouTube vom TikTok-Handle ab (`leifalone` dort vergeben),
+Anzeigename bleibt plattformübergreifend identisch ("Leif Alone") für den
+Wiedererkennungswert.
+
 ## Caption/Hook-Vorlagen
 
 Grundformel: **Tages-/Fortschrittszähler + kurzer Spannungssatz + offene
@@ -61,7 +73,8 @@ Konsistenz > Regelmäßigkeit > Tempo).
 - [x] Kein Kontakte-Import bei der Einrichtung
 - [x] Keine private Telefonnummer/E-Mail als sichtbare Kontaktmethode im
   Profil hinterlegt
-- [ ] TikTok/Instagram/YouTube-Accounts mit dieser E-Mail anlegen (nicht
-  über "Mit Google/Facebook anmelden" vom privaten Account aus)
+- [x] TikTok-Account angelegt (@leifalone)
+- [x] YouTube-Account angelegt (@leifalone.official)
+- [ ] Instagram-Account anlegen
 - [ ] Bio/Profilbild sofort bei Account-Erstellung befüllen, nicht leer
   lassen
