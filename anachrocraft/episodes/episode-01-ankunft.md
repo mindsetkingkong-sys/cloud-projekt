@@ -331,3 +331,13 @@ Environment: `a misty river seen from the forest edge, moss-covered banks, liche
 **Pre-Production-Audit:** durchgeführt, 5 von 8 Shots korrigiert (3, 4, 6, 7, 8), 3 unverändert sauber (1, 2, 5). Gegen `veo-workflow.md`, `characters/leif.md`, `continuity-rules.md`, `quality-check.md`, `negative-patterns.md` geprüft — keine offenen Widersprüche.
 
 **Episode 01 Veo-ready: JA**
+
+## Monetarisierungs-Status (Nachtrag)
+
+Episode 1 liegt bei ~31-42s Gesamtlänge, unter TikToks 1-Minuten-Schwelle
+für das Creator Rewards Program — der Clip ist damit unabhängig von
+Followern/Views auf TikTok nicht monetarisierbar. Episode 1 ist bewusst als
+kurze Pilot-Episode von der neuen 60s-Mindestlänge ausgenommen (siehe
+`../production_rules/capacity-and-cadence.md`), um kein bereits
+freigegebenes Kontingent (Shots 1-7) zu verwerfen. Ab Episode 2 gilt die
+60s-Mindestlänge für Meilenstein-Episoden verbindlich.

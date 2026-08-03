@@ -12,6 +12,13 @@
 *(aktualisiert auf bis zu 90s, passend zum Ziel "Clips über eine Minute";
 vorheriger Wert war auf 60s begrenzt)*
 
+**Monetarisierungs-Hinweis:** TikToks Creator Rewards Program verlangt >1
+Minute pro Video. Für Meilenstein-Episoden (ab Episode 2, siehe
+`capacity-and-cadence.md`) die Journey/Conflict-Phase deshalb großzügig
+genug mit eigenständigen, story-relevanten Shots füllen, um verlässlich über
+60s Gesamtlänge zu kommen — nicht mit Füllshots ohne Story-Zweck auffüllen
+(bleibt an `quality-check.md` Punkt 7 gebunden).
+
 ## Jede Episode braucht
 
 - **Visuelles Ziel** — was soll am Ende der Episode sichtbar erreicht/
