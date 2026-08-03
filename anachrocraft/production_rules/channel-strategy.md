@@ -27,7 +27,7 @@ abgestimmt (AI-Kennzeichnung, keine Fake-Real-Behauptungen).
 |---|---|---|
 | TikTok | Leif Alone | @leifalone |
 | YouTube | Leif Alone | @leifalone.official |
-| Instagram | Leif Alone | noch offen |
+| Instagram | — | vorerst bewusst nicht angelegt |
 
 Handle weicht auf YouTube vom TikTok-Handle ab (`leifalone` dort vergeben),
 Anzeigename bleibt plattformübergreifend identisch ("Leif Alone") für den
@@ -60,8 +60,10 @@ Konsistenz > Regelmäßigkeit > Tempo).
 - **Start-Kadenz:** 2× pro Woche — 1× Meilenstein-Episode (wenn genug
   frische Shots vorhanden sind, sonst 2× Tages-Update-Episode).
 - **Plattform-Reihenfolge:** TikTok zuerst (schnellstes Feedback-Signal),
-  dann Instagram Reels und YouTube Shorts am selben oder Folgetag,
-  identischer Schnitt. AI-Label auf allen drei Plattformen einzeln setzen.
+  dann YouTube Shorts am selben oder Folgetag, identischer Schnitt.
+  Instagram Reels ist vorerst bewusst ausgeklammert (kein Account) — wird
+  bei Bedarf später ergänzt, kein aktueller Blocker. AI-Label auf jeder
+  genutzten Plattform einzeln setzen.
 - **Erste 2 Wochen als Test-Phase:** bewusst nicht auf Wachstum optimieren,
   sondern Kadenz und Qualität stabil halten — erst danach anhand realer
   Retention-Daten nachjustieren.
@@ -75,6 +77,7 @@ Konsistenz > Regelmäßigkeit > Tempo).
   Profil hinterlegt
 - [x] TikTok-Account angelegt (@leifalone)
 - [x] YouTube-Account angelegt (@leifalone.official)
-- [ ] Instagram-Account anlegen
+- [ ] Instagram-Account anlegen (vorerst bewusst zurückgestellt, keine
+  Priorität)
 - [ ] Bio/Profilbild sofort bei Account-Erstellung befüllen, nicht leer
   lassen
