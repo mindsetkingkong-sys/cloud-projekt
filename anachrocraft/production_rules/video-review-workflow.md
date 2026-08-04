@@ -4,6 +4,26 @@ Wenn ein fertiges Video zur Analyse bereitgestellt wird: zuerst das gesamte
 Video als Ganzes analysieren, danach einzelne Shots. Dieser Workflow dient
 Phase 7 ("Ergebnisse analysieren und Learnings speichern") aus `../CLAUDE.md`.
 
+## Technischer Ablauf (Video-Upload + Frame-Extraktion)
+
+Fertige Clips können direkt als Videodatei hochgeladen werden — Frames werden
+per `ffmpeg` extrahiert (Standard-Tool, lokal installiert, kein
+Drittanbieter-Plugin). Praktischer Richtwert, ❓ nicht offiziell dokumentiert,
+nur empirisch getestet: **~42s Upload bestätigt funktionsfähig, ~48s ist in
+einem Test gescheitert** (Upload blieb im Lade-Feed hängen). Wahrscheinlich
+begrenzt die Datei**größe** (abhängig von Auflösung/Bitrate), nicht die
+Sekundenzahl direkt — bei längeren Episoden vorsorglich in 2 Teilen
+hochladen oder Export-Bitrate in CapCut reduzieren.
+
+Bei Videos über ~15s: Frames nicht literweise pro Sekunde extrahieren
+(unnötig viele Bilder), sondern alle 3-5s oder gezielt an den bekannten
+Shot-Übergängen — deckt Story-Fluss und Retention-Punkte ausreichend ab.
+
+Audio-Spuren werden zwar technisch erkannt (Metadaten), können aber
+**nicht inhaltlich analysiert werden** — kein Hör-/Transkriptions-Zugriff
+verfügbar. `audio-design.md`-Konformität lässt sich damit bisher nicht
+automatisiert prüfen, nur über die Beschreibung des Nutzers.
+
 ## 1. Story Review
 
 - Ist die Geschichte verständlich?
