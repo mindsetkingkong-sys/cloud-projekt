@@ -18,24 +18,37 @@ Jeder Veo-Prompt enthält diese 7 Elemente, in dieser Reihenfolge:
 Grundregeln: klare Hauptidee pro Shot, Szene nicht überladen, Kamera und
 Bewegung physikalisch logisch, Charakterkonsistenz erhalten.
 
-## Positions-/Grounding-Anweisungen (Regel, ✅ aus wiederholtem Praxisfund)
+## Positions-/Grounding-Anweisungen (Regel, ✅ bestätigt durch erfolgreiche Neu-Generierung)
 
-- **Positions- und Grounding-Anweisungen** (z.B. "Knie bleibt am Boden",
-  "keine Verschiebung zur Kamera/zum Hintergrund") gehören **ausschließlich**
-  in Element 3 (Main Action) — nie in Element 5 (Camera Movement).
-- **Camera Movement beschreibt ausschließlich die Kamera selbst**, nie den
-  Charakter. Wird eine Charakter-Anweisung ins Kamera-Feld gemischt, ist für
-  das Modell unklar, worauf sich "keine Bewegung" bezieht — das schwächt
-  statt zu verstärken.
-- **Grounding immer positiv formulieren**, nicht als Verneinung. Statt "no
-  shifting, no sliding" den Zielzustand beschreiben, z.B. "weight grounded
-  and heavy through knee and boot, pressed into the ground". Negative
-  Formulierungen liefern dem Modell kein greifbares Zielbild und sind
-  nachweislich unzuverlässiger.
+**Wann diese Regel greift (Trigger):** immer, wenn ein Shot eine fixierte
+Körperposition (kniend, sitzend, angelehnt, "Static"-Kamera) **mit** einer
+kraftvollen/stoßhaften Handlung kombiniert (Schlag, Stoß, Aufprall, Wurf).
+Wird bereits in Phase 6 (`quality-check.md`, Punkt 4) vor jeder Generierung
+geprüft, nicht erst nachträglich.
 
-Hintergrund: dieser Fund entstand nach dreifacher Reproduktion desselben
-Fehlers (Charakter "schwebt"/rutscht rückwärts durch die Szene trotz
-"Static"-Kamera), siehe `episodes/episode-02-unterstand.md`, Shot 5.
+**Ursache des Fehlers:** eine kraftvolle Handlung (z.B. ein Axtschlag)
+erzeugt in echter Biomechanik immer eine Gegenbewegung/Gewichtsverlagerung.
+Wird der restliche Körper gleichzeitig als vollständig bewegungslos
+vorgegeben, kann das Modell diesen Widerspruch nicht isoliert in
+Armen/Schultern auflösen — es verschiebt stattdessen den ganzen Körper
+("schwebt"/rutscht durch die Szene). Verstärkt wird das, wenn zusätzlich das
+Ende des Aufpralls/der Materialverformung (z.B. Ast bricht) gezeigt werden
+soll — eine zweite, eigenständig fehleranfällige Physik-Aufgabe.
+
+**Lösung (dreifach, alle drei Teile nötig):**
+1. **Positions- und Grounding-Anweisungen gehören ausschließlich** in
+   Element 3 (Main Action) — nie in Element 5 (Camera Movement). Camera
+   Movement beschreibt ausschließlich die Kamera selbst, nie den Charakter.
+2. **Grounding immer positiv formulieren**, nicht als Verneinung. Statt "no
+   shifting, no sliding" den Zielzustand beschreiben, z.B. "weight grounded
+   and heavy through knee and boot, pressed into the ground".
+3. **Handlung vor dem Aufprall/Materialbruch enden lassen**, statt ihn zu
+   zeigen (z.B. "the shot ends the instant the blade makes contact, before
+   it splits").
+
+Fund entstand nach dreifacher Reproduktion desselben Fehlers, gelöst und
+bestätigt in `episodes/episode-02-unterstand.md`, Shot 5. Siehe auch
+`negative-patterns.md`, Kategorie "Impact-/Materialphysik".
 
 ## Experimentell: mehrere Referenzbilder direkt in Veo (❓ noch nicht Standard)
 

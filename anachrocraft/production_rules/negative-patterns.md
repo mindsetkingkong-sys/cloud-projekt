@@ -33,6 +33,11 @@ wird (siehe `quality-check.md`, Punkt 5).
   strikter Positionsanforderung gezeigt. Empfehlung: Shot vor dem
   eigentlichen Aufprall/Bruch enden lassen, statt ihn vollständig zu zeigen
   (siehe `veo-workflow.md`, Positions-/Grounding-Regel)
+- **Status: gelöst und bestätigt** (nicht mehr nur Verdacht) — die
+  Gegenprobe mit korrigiertem Prompt (Grounding positiv, ausschließlich in
+  Main Action, Handlung endet vor Aufprall) hat den Fehler beseitigt. Wird
+  jetzt proaktiv in `quality-check.md`, Punkt 4, vor jeder Generierung
+  abgefragt, statt erst nach einem Fehler reaktiv korrigiert zu werden.
 
 ## Kamera
 - **Unlogische Perspektiven** — Blickwinkel passt nicht zur beschriebenen

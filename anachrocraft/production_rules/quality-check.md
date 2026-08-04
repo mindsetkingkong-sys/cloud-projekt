@@ -23,6 +23,7 @@ hinterher reparieren.
 ## 4. Physik-Prüfung
 - [ ] Eine dominante Hauptaktion im Prompt? Kleine natürliche Nebenbewegungen/Reaktionen sind erlaubt (z.B. "läuft, bleibt stehen, schaut sich um"), mehrere unabhängige Handlungen/Ortswechsel (z.B. "läuft, baut Hütte, kämpft, findet Gegenstand, wechselt Ort") nicht.
 - [ ] Ist die beschriebene Hauptaktion in der gewählten Clip-Länge plausibel machbar (siehe Clip-Längen-Tabelle in `camera-system.md`)?
+- [ ] **Kombiniert der Shot eine fixierte Körperposition (kniend, sitzend, "Static"-Kamera) mit einer kraftvollen/stoßhaften Handlung (Schlag, Stoß, Aufprall)?** Falls ja, verbindlich: Grounding-Anweisung positiv formuliert ausschließlich in Main Action (nie in Camera Movement), und die Handlung endet vor dem eigentlichen Aufprall/Materialbruch, nicht danach (siehe `veo-workflow.md`, Abschnitt "Positions-/Grounding-Anweisungen", und `negative-patterns.md`, Kategorie "Impact-/Materialphysik"). Ursache: das Modell kann den impliziten Rückstoß einer Kraftbewegung nicht isoliert in Armen/Schultern darstellen, wenn der Rest des Körpers als bewegungslos vorgegeben ist, und verschiebt stattdessen den ganzen Körper ("Schweben"/Rutschen).
 
 ## 5. Artefakt-Risiken
 - [ ] Falls das Gemini-Wasserzeichen im leeren Hintergrund landet: gecropt? (Landet es auf Kleidung/Haut/Motiv, wird es akzeptiert, kein Regenerierungsgrund — siehe `veo-workflow.md`.)
