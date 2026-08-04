@@ -46,10 +46,14 @@ ein Objekt/Prop, eines für Ort/Stil. ✅ Existenz der Funktion belegt
 (Google-Blog), ❓ tatsächlicher Effekt auf Charakterkonsistenz/Bodenkontakt/
 Bewegungsqualität in unserem Workflow noch nicht getestet.
 
-**Status: experimentell, kein Standard-Workflow.** Geplanter Test: 1 vs. 2
-vs. 3 Referenzbilder am selben Shot vergleichen (Charakterkonsistenz,
-Bodenkontakt, Bewegungsqualität). Erst nach Testergebnis wird entschieden,
-ob dies dauerhaft in den Standard-Workflow (Schritt 3 oben) übernommen wird.
+**Status: experimentell, kein Standard-Workflow — vorerst zurückgestellt.**
+Grund: begrenztes Generierungs-Kontingent, daher zuerst die Prompt-/
+Workflow-Änderungen (siehe oben) allein testen. Nur falls derselbe Fehler
+(Schweben/Rutschen) trotz korrigiertem Prompt erneut auftritt, wird der
+Test 1 vs. 2 vs. 3 Referenzbilder (Charakterkonsistenz, Bodenkontakt,
+Bewegungsqualität) durchgeführt. Erst nach diesem Testergebnis wird
+entschieden, ob es dauerhaft in den Standard-Workflow (Schritt 3 oben)
+übernommen wird.
 
 ## Ablauf
 
