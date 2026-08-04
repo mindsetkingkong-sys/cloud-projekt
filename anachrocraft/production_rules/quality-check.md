@@ -44,5 +44,21 @@ hinterher reparieren.
 Ein visuell schöner Shot ohne Story-Funktion wird verbessert oder entfernt,
 nicht allein wegen guter Optik behalten.
 
+## 8. Prüfgrenzen und Unsicherheit
+
+Gilt für jede Prüfung in dieser Checkliste und für `video-review-workflow.md`:
+
+- Bei jeder Qualitätsprüfung muss klar zwischen tatsächlich überprüften
+  Fakten und nicht überprüfbaren Bereichen unterschieden werden.
+- Keine Qualität bestätigen, die nicht tatsächlich geprüft werden konnte.
+- Wenn eine Analysefähigkeit fehlt (z.B. keine Audioanalyse verfügbar,
+  siehe `video-review-workflow.md`), muss das explizit genannt werden.
+- Fehlende Informationen dürfen nicht durch Annahmen ersetzt werden.
+- Eine ehrliche Einschränkung ist besser als eine falsche Freigabe.
+
+**Beispiel — gut:** "Audioqualität konnte nicht bewertet werden, da keine
+Audioanalyse verfügbar ist."
+**Beispiel — schlecht:** "Der Sound passt perfekt."
+
 **Regel:** Wenn ein Punkt nicht erfüllt ist, wird der Prompt korrigiert, bevor
 generiert wird — nicht danach in der Nachbearbeitung "repariert".

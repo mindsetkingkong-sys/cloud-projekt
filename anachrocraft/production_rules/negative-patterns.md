@@ -4,6 +4,36 @@ Keine lange generische Negativ-Prompt-Liste. Stattdessen: eine Fehler-Datenbank
 nach Kategorie, auf die beim Prüfen eines generierten Shots konkret geachtet
 wird (siehe `quality-check.md`, Punkt 5).
 
+## Fehleranalyse Format
+
+Verbindliches Format, wenn ein neuer Fehler dieser Datenbank hinzugefügt wird
+(egal ob als bestätigte Kategorie oder in der Beobachtungsliste unten):
+
+### Fehler
+Was ist sichtbar falsch?
+
+### Ursache
+Warum ist der Fehler entstanden? (z.B. Prompt, Modellverhalten, fehlende Regel)
+
+### Lösung
+Welche Korrektur wurde durchgeführt?
+
+### Neue Regel
+Welche Anpassung verhindert, dass dieser Fehler erneut auftritt?
+
+Ziel: Fehler werden nicht nur behoben, sondern in dauerhaftes Systemwissen
+umgewandelt, nicht nur im Gespräch gelöst.
+
+**Abgrenzung zu verwandten Formaten** (kein Duplikat, andere Ebene):
+- `video-review-workflow.md`, Abschnitt 6 ("Konkrete Verbesserungen") ist das
+  Ausgabeformat für die Analyse eines **ganzen** Videos/mehrerer Shots — dieses
+  Fehleranalyse-Format ist die Dokumentation eines **einzelnen** Fehlers in
+  dieser Datei. Ein Video-Review kann mehrere Fehleranalyse-Einträge erzeugen.
+- `prompt-versioning.md`, "Bei Änderungen dokumentieren" gilt spezifisch für
+  die Versionshistorie **eines Prompts** in der jeweiligen Episoden-Datei —
+  dieses Format hier gilt für die allgemeine, prompt-übergreifende
+  Fehler-Datenbank.
+
 ## Charakter
 - **Gesicht verändert sich** — Gesichtszüge weichen vom Referenzbild/-sheet ab
 - **Kleidung wechselt ohne Erklärung** — Farbe/Schnitt weicht vom Master-Prompt
