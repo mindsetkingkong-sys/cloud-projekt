@@ -85,6 +85,20 @@ Veo ein Objekt, das nirgends angefordert war".
 - **Unmögliche Bewegungen** — Kamera bewegt sich anders als im Prompt
   angegeben, oder wechselt mitten im Clip die Perspektive
 
+## Beobachtungsliste (unbestätigte Einzelfälle, noch keine Regel)
+
+Einzelne Ausreißer werden hier gesammelt, nicht sofort als feste Regel
+behandelt. Erst bei einem zweiten, vergleichbaren Vorkommnis wird daraus eine
+eigene Kategorie mit Lösung weiter oben in dieser Datei.
+
+- **Ergebnis ignoriert Prompt und Referenzbild komplett** — bei Shot 5
+  (2. Regenerierungsversuch, `episodes/episode-02-unterstand.md`) zeigte das
+  generierte Video eine völlig andere Szene (stehend, Blick auf den Fluss)
+  als Prompt und Referenzbild (kniend, Ast durchtrennen) vorgaben. Ursache
+  unklar — nicht die Gemini-Chat-Modell-Auswahl (geprüft, war irrelevant).
+  Einzelfall, keine Regel. Verworfen, letzte erfolgreiche Fassung von Shot 5
+  bleibt gültig.
+
 ## Sonstiges
 - **Zufällige Personen im Hintergrund** — Leif soll allein sein; jede
   zusätzliche Person im Bild ist ein Fehler, kein "netter Zufall"

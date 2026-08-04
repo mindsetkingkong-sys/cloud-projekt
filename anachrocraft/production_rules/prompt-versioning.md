@@ -46,3 +46,23 @@ Prüfung und Prompt-Historie an einer Stelle bleiben.
 Nur **Approved**-Prompts gelten als Referenz für neue Episoden. Draft/Tested
 werden nicht als Vorlage für andere Shots verwendet, bis sie selbst
 Approved sind.
+
+## Approved Shot Protection
+
+Sobald ein Shot alle vier Kriterien besteht —
+- Charakterkonsistenz
+- Bewegungsqualität
+- Szenenlogik
+- Timing
+
+— gilt er als **bevorzugte Fassung** und bekommt Bestandsschutz.
+
+**Nicht neu generieren wegen kleiner visueller Artefakte** (z.B. ein
+einzelnes unerklärtes Nebenobjekt in einem Frame ohne Story-Relevanz, siehe
+`negative-patterns.md`). **Nur neu generieren, wenn der Fehler die
+Story-Logik oder die Zuschauerwahrnehmung tatsächlich beschädigt** — nicht
+bei jeder Abweichung, die bei genauem Hinsehen auffällt.
+
+Ein missglückter Regenerierungsversuch verdrängt niemals automatisch eine
+bereits Approved-Fassung — die letzte erfolgreiche Version bleibt gültig,
+bis eine nachweislich bessere sie ersetzt (nicht nur eine andere).

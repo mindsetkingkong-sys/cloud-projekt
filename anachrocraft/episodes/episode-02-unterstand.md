@@ -128,6 +128,6 @@ Veo-Prompts, damit der Zeitsprung nicht uneindeutig bleibt.
 | 2 | ✅ freigegeben | ✅ freigegeben | bestanden |
 | 3 | ✅ freigegeben | ✅ freigegeben | bestanden |
 | 4 | ✅ freigegeben | ✅ freigegeben | bestanden |
-| 5 | ✅ freigegeben (2. Fassung, ohne Asthaufen) | ✅ freigegeben (überarbeiteter Prompt nach Sliding-Fix) | bestanden — siehe Grounding-Fix in `../production_rules/veo-workflow.md` |
+| 5 | ✅ freigegeben (2. Fassung, ohne Asthaufen) | ✅ freigegeben (überarbeiteter Prompt nach Sliding-Fix) — **bevorzugte Fassung, Bestandsschutz** (siehe `../production_rules/prompt-versioning.md`, "Approved Shot Protection") | bestanden — siehe Grounding-Fix in `../production_rules/veo-workflow.md`. Ein späterer Regenerierungsversuch (Ergebnis zeigte eine komplett andere Szene, siehe `../production_rules/negative-patterns.md`, Beobachtungsliste) wurde verworfen, ändert nichts am Status dieser Fassung. |
 | 6 | ✅ freigegeben | ✅ freigegeben | **bestanden mit kleiner Kontinuitätsabweichung** — einzelner unerklärter Stock in einem Frame (Unplanned Object Generation, siehe `../production_rules/negative-patterns.md`), isoliert, keine Story-Relevanz, Grounding/Kernkontinuität sauber; kein Grund für Neu-Generierung |
 | 7-10 | offen | offen | noch nicht produziert |
