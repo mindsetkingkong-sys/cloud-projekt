@@ -98,6 +98,15 @@ eigene Kategorie mit Lösung weiter oben in dieser Datei.
   unklar — nicht die Gemini-Chat-Modell-Auswahl (geprüft, war irrelevant).
   Einzelfall, keine Regel. Verworfen, letzte erfolgreiche Fassung von Shot 5
   bleibt gültig.
+- **Shot-Rahmung vermischt sich innerhalb eines Clips** — bei Shot 6
+  (`episodes/episode-02-unterstand.md`, Neu-Generierung mit korrigiertem
+  Keyframe) begann das Video als Vollkörper-Medium-Shot mit erhobener Axt
+  (identisch zur Rahmung von Shot 5), wechselte dann mitten im Clip zur
+  angeforderten Extreme-Close-up-Hand-Szene (Shot 6). Nur ein einziges,
+  korrektes Referenzbild (Shot 6) wurde eingereicht — keine
+  Bildreferenz-Verwechslung auf Nutzerseite bestätigt. Ursache unklar.
+  Einzelfall, keine Regel. Verworfen, Neu-Generierung mit demselben
+  Keyframe/Prompt versucht.
 
 ## Sonstiges
 - **Zufällige Personen im Hintergrund** — Leif soll allein sein; jede
