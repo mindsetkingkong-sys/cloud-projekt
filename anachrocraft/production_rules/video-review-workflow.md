@@ -50,6 +50,11 @@ Suche gezielt nach den Kategorien aus `negative-patterns.md`:
 - falscher Physik
 - unnatürlichen Bewegungen
 - wechselnden Details (Kleidung, Ausrüstung)
+- **unerklärten Objekten** — ist jedes sichtbare Objekt im Clip durch
+  Prompt-Text, Referenzbild oder eindeutig plausible natürliche Umgebung
+  erklärt? Ein Objekt ohne diese Grundlage ist ein Fehler, auch wenn es
+  harmlos wirkt oder später wieder verschwindet (siehe `negative-patterns.md`,
+  Kategorie "Unplanned Object Generation / Scene Contamination")
 
 ## 5. Retention Review
 

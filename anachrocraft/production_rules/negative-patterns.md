@@ -61,6 +61,24 @@ zukünftiges Baumaterial.
 - Landen fallen gelassene/abgelegte Objekte sichtbar irgendwo, statt zu
   verschwinden?
 
+## Unplanned Object Generation / Scene Contamination
+Eigene Unterkategorie, weil dieser Fehler zeitlich vor der Objekt-Kontinuität
+ansetzt: nicht "ändert sich ein bekanntes Objekt falsch", sondern "erzeugt
+Veo ein Objekt, das nirgends angefordert war".
+- **Veo erzeugt ein Objekt ohne Grundlage** — taucht weder im Prompt-Text,
+  im Referenzbild noch als plausibler Bestandteil der natürlichen Umgebung
+  auf (z.B. ein einzelner Stock/Ast, der einfach im Bild erscheint, ohne
+  dass er Teil der beschriebenen Szene war)
+- **Das unangeforderte Objekt verschwindet später wieder** — bestätigt, dass
+  es kein bewusst generiertes Umgebungsdetail war, sondern ein Fehler
+  (Fund aus `episodes/episode-02-unterstand.md`, Shot 6)
+- **Prüfen (Video-Review, nach der Generierung):** ist jedes sichtbare
+  Objekt im fertigen Clip durch mindestens eine Quelle erklärt — Prompt-Text,
+  Referenzbild, oder eindeutig plausible natürliche Umgebung (z.B. normale
+  Waldboden-Streuung, die nicht einzeln benannt werden muss)? Ein Objekt, das
+  keiner dieser drei Quellen zuzuordnen ist, gilt als Fehler, unabhängig
+  davon, ob es "harmlos" aussieht.
+
 ## Kamera
 - **Unlogische Perspektiven** — Blickwinkel passt nicht zur beschriebenen
   Szene/Position
