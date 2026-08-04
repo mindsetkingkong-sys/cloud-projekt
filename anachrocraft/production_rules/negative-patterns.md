@@ -22,6 +22,18 @@ wird (siehe `quality-check.md`, Punkt 5).
 - **Bewegungen unrealistisch** — passen nicht zur beschriebenen Handlung
   (z.B. Gehen ohne Beinbewegung, Feuer ohne Rauchrichtung passend zum Wind)
 
+## Impact-/Materialphysik
+- **Charakter "schwebt"/rutscht statt sich mit Körpergewicht zu bewegen** —
+  besonders bei fixierter Position (z.B. kniend, "Static" Kamera) kombiniert
+  mit einer kraftvollen Handlung (Schlag, Stoß); das Modell kann den
+  impliziten Rückstoß/die Gewichtsverlagerung nicht isoliert in Armen/
+  Schultern darstellen und verschiebt stattdessen den ganzen Körper
+- **Aufprall auf Widerstand + Materialverformung** — Klinge trifft Holz,
+  Holz bricht/splittert: hohe Fehleranfälligkeit, wenn in einem Clip mit
+  strikter Positionsanforderung gezeigt. Empfehlung: Shot vor dem
+  eigentlichen Aufprall/Bruch enden lassen, statt ihn vollständig zu zeigen
+  (siehe `veo-workflow.md`, Positions-/Grounding-Regel)
+
 ## Kamera
 - **Unlogische Perspektiven** — Blickwinkel passt nicht zur beschriebenen
   Szene/Position

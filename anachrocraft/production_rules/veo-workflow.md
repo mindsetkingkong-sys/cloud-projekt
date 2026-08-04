@@ -18,6 +18,39 @@ Jeder Veo-Prompt enthält diese 7 Elemente, in dieser Reihenfolge:
 Grundregeln: klare Hauptidee pro Shot, Szene nicht überladen, Kamera und
 Bewegung physikalisch logisch, Charakterkonsistenz erhalten.
 
+## Positions-/Grounding-Anweisungen (Regel, ✅ aus wiederholtem Praxisfund)
+
+- **Positions- und Grounding-Anweisungen** (z.B. "Knie bleibt am Boden",
+  "keine Verschiebung zur Kamera/zum Hintergrund") gehören **ausschließlich**
+  in Element 3 (Main Action) — nie in Element 5 (Camera Movement).
+- **Camera Movement beschreibt ausschließlich die Kamera selbst**, nie den
+  Charakter. Wird eine Charakter-Anweisung ins Kamera-Feld gemischt, ist für
+  das Modell unklar, worauf sich "keine Bewegung" bezieht — das schwächt
+  statt zu verstärken.
+- **Grounding immer positiv formulieren**, nicht als Verneinung. Statt "no
+  shifting, no sliding" den Zielzustand beschreiben, z.B. "weight grounded
+  and heavy through knee and boot, pressed into the ground". Negative
+  Formulierungen liefern dem Modell kein greifbares Zielbild und sind
+  nachweislich unzuverlässiger.
+
+Hintergrund: dieser Fund entstand nach dreifacher Reproduktion desselben
+Fehlers (Charakter "schwebt"/rutscht rückwärts durch die Szene trotz
+"Static"-Kamera), siehe `episodes/episode-02-unterstand.md`, Shot 5.
+
+## Experimentell: mehrere Referenzbilder direkt in Veo (❓ noch nicht Standard)
+
+Veo 3.1 unterstützt laut offizieller Google-Dokumentation ("Ingredients to
+Video") bis zu 3 Referenzbilder direkt in der Video-Generierung (nicht nur
+im Nano-Banana-Keyframe): ein Bild für Charakter (Gesicht/Outfit), eines für
+ein Objekt/Prop, eines für Ort/Stil. ✅ Existenz der Funktion belegt
+(Google-Blog), ❓ tatsächlicher Effekt auf Charakterkonsistenz/Bodenkontakt/
+Bewegungsqualität in unserem Workflow noch nicht getestet.
+
+**Status: experimentell, kein Standard-Workflow.** Geplanter Test: 1 vs. 2
+vs. 3 Referenzbilder am selben Shot vergleichen (Charakterkonsistenz,
+Bodenkontakt, Bewegungsqualität). Erst nach Testergebnis wird entschieden,
+ob dies dauerhaft in den Standard-Workflow (Schritt 3 oben) übernommen wird.
+
 ## Ablauf
 
 1. **Shot planen** — aus der Episoden-Shot-Liste (`episodes/`), Shot-Größe +
