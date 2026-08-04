@@ -88,6 +88,13 @@ entschieden, ob es dauerhaft in den Standard-Workflow (Schritt 3 oben)
 6. **Verbessern** — bei Fehler: Prompt präzisieren oder neu generieren, nicht
    den Fehler in der Nachbearbeitung "wegschneiden", wenn er den Charakter
    selbst betrifft (Gesicht/Ausrüstung).
+7. **Produktionsstand dokumentieren (verpflichtend)** — Ergebnis (Keyframe
+   freigegeben? Video freigegeben? Besonderheiten/Abweichungen?) in der
+   "Produktionsstand"-Tabelle der jeweiligen Episoden-Datei festhalten,
+   direkt nach Freigabe — nicht nur im Gespräch belassen. Vorlage/Beispiel:
+   `../episodes/episode-02-unterstand.md`, Abschnitt "Produktionsstand
+   (laufend aktualisiert)". Ohne diesen Schritt gilt ein Shot nicht als
+   abgeschlossen, auch wenn Keyframe und Video bereits freigegeben sind.
 
 ## Wann ein Shot neu generiert werden muss
 

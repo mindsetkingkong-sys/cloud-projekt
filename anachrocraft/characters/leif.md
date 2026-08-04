@@ -67,8 +67,18 @@ Beard: full medium-length beard, dirty-blond with light grey strands at the chin
 Clothing: red-and-black buffalo-check flannel shirt, top buttons open, sleeves rolled to forearm, dark charcoal thermal base layer visible at collar and cuffs; olive-brown cargo pants with thigh pockets; worn brown leather lace-up work boots.
 Gear: brown canvas rucksack with a rolled bedroll strapped on top with leather straps; carries exactly one hand axe with dark wood handle and worn steel head.
 Skin/texture: natural pores, sun-weathered, non-glamorous, unretouched realism.
-Style: ultra photorealistic, Nordic survival, natural lighting, cinematic movie look, earth tones, cold shadows, warm sunlight, real camera optics, slight film grain, high dynamic range.
+Style: ultra photorealistic, Nordic survival, natural lighting, cinematic movie look, earth tones, cold shadows, real camera optics, slight film grain, high dynamic range.
 ```
+
+**Hinweis:** Der Style-Block enthält bewusst **kein** "warm sunlight" mehr
+— Licht(-farbtemperatur) ist episodenspezifisch und wird ausschließlich über
+`../production_rules/lighting-rules.md` festgelegt, nie im Master Character
+Prompt fest vorgegeben. Frühere Fassungen enthielten "warm sunlight" fest im
+Style-Block, was der episodenspezifischen Lichtregel widersprach (musste bei
+Episode 1 manuell pro Prompt herausgenommen werden) — jetzt an der Quelle
+korrigiert. "cold shadows"/"natural lighting" bleiben, da sie mit jeder
+Episoden-Lichtstimmung kompatibel sind, kein fester Sonnenstand/keine feste
+Farbtemperatur.
 
 ## Nicht-verbale Charakterzüge (für Story/Regie)
 

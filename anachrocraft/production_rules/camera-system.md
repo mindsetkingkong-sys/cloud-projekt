@@ -20,6 +20,7 @@
 | Pan | Landschaft/Umgebung abfahren, ohne dass Leif sich bewegt |
 | Push-in | auf ein Detail oder Gesicht zusteuern, für Betonung |
 | POV | aus Leifs Blickwinkel, für Entdeckungsmomente |
+| Static | keine Kamerabewegung, feste Position/Framing — u.a. verbindlich bei Shots, die eine fixierte Körperposition mit einer kraftvollen Handlung kombinieren (siehe `veo-workflow.md`, Abschnitt "Positions-/Grounding-Anweisungen") |
 
 ## Clip-Länge nach Shot-Größe
 

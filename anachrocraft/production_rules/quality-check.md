@@ -13,7 +13,11 @@ hinterher reparieren.
 - [ ] Genau eine Axt, keine zweite?
 - [ ] Keine Mütze/Beanie?
 - [ ] Kleidungszustand passt zum aktuellen Story-Zeitpunkt (siehe `continuity-rules.md`)?
-- [ ] **Bei fertigen Videos:** Rucksack und Axt an mindestens 3 Stellen im Clip geprüft (Anfang/Mitte/Ende), nicht nur an der Stelle des ursprünglich gemeldeten Problems — Ausrüstung kann irgendwo im Clip verschwinden, ohne dass der Rest auffällig wirkt.
+
+Equipment-Prüfung an mehreren Stellen im fertigen Clip ist **nicht** Teil
+dieser Vor-Generierung-Checkliste (diese Datei prüft ausschließlich vor dem
+Absenden eines Prompts, siehe Kopf dieser Datei) — die verbindliche Regel
+dafür steht ausschließlich in `video-review-workflow.md`, Abschnitt 2.
 
 ## 3. Kamera-Logik
 - [ ] Einstellungsgröße explizit benannt (wide/close-up/...), nicht nur eine mm-Zahl?
