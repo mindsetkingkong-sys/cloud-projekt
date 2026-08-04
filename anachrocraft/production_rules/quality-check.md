@@ -29,6 +29,7 @@ hinterher reparieren.
 - [ ] Falls das Gemini-Wasserzeichen im leeren Hintergrund landet: gecropt? (Landet es auf Kleidung/Haut/Motiv, wird es akzeptiert, kein Regenerierungsgrund — siehe `veo-workflow.md`.)
 - [ ] Prompt enthält keine Formulierung, die zu bekannten Fehlermustern führt (siehe `negative-patterns.md`)?
 - [ ] **Objekt-Kontinuität:** enthält die Umgebungsbeschreibung nur Objekte, die tatsächlich im Prompt vorgesehen sind (kein unbeabsichtigter Requisiten-Zuwachs wie z.B. ein nicht angeforderter Asthaufen)? Bei mehreren losen/ähnlichen Objekten in einer Szene (Äste, Werkzeug) explizit "no other [Objekt] nearby" ergänzen (siehe `negative-patterns.md`, Kategorie "Objekt-Kontinuität/Persistenz").
+- [ ] **Unplanned Object Generation / Scene Contamination:** ist im fertigen Ergebnis jedes sichtbare Objekt durch Prompt-Text, Referenzbild oder eindeutig plausible natürliche Umgebung erklärt? Ein Objekt ohne diese Grundlage ist ein Fehler, auch wenn es klein/harmlos wirkt oder in späteren Frames wieder verschwindet (siehe `negative-patterns.md`, gleichnamige Kategorie). Isolierte Einzelframe-Vorkommnisse an Nebenobjekten ohne Story-Relevanz können als kleine Kontinuitätsabweichung akzeptiert werden, wenn die Kernhandlung/Kernkontinuität (Charakter, Ausrüstung, Position) sauber bleibt.
 
 ## 6. Veo 3.1 Eignungsprüfung
 - [ ] Clip-Länge entspricht den aktuell verfügbaren Einstellungen und ist so gewählt, dass die Szene innerhalb dieses einen Clips verständlich und visuell umsetzbar ist?
