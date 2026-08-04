@@ -82,8 +82,19 @@ function CrossfadeLayer({ src, alt }: { src: string; alt: string }) {
     if (src === displayed) return;
     setIncoming(src);
     setFadeIn(false);
-    const raf = requestAnimationFrame(() => setFadeIn(true));
-    return () => cancelAnimationFrame(raf);
+    let raf2 = 0;
+    const raf1 = requestAnimationFrame(() => {
+      raf2 = requestAnimationFrame(() => setFadeIn(true));
+    });
+    const timeout = setTimeout(() => {
+      setDisplayed(src);
+      setIncoming(null);
+    }, 400);
+    return () => {
+      cancelAnimationFrame(raf1);
+      cancelAnimationFrame(raf2);
+      clearTimeout(timeout);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [src]);
 
@@ -97,10 +108,6 @@ function CrossfadeLayer({ src, alt }: { src: string; alt: string }) {
           fill
           unoptimized
           style={{ objectFit: "fill", opacity: fadeIn ? 1 : 0, transition: "opacity 350ms ease" }}
-          onTransitionEnd={() => {
-            setDisplayed(incoming);
-            setIncoming(null);
-          }}
         />
       )}
     </>
