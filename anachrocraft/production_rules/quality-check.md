@@ -28,6 +28,7 @@ hinterher reparieren.
 ## 5. Artefakt-Risiken
 - [ ] Falls das Gemini-Wasserzeichen im leeren Hintergrund landet: gecropt? (Landet es auf Kleidung/Haut/Motiv, wird es akzeptiert, kein Regenerierungsgrund — siehe `veo-workflow.md`.)
 - [ ] Prompt enthält keine Formulierung, die zu bekannten Fehlermustern führt (siehe `negative-patterns.md`)?
+- [ ] **Objekt-Kontinuität:** enthält die Umgebungsbeschreibung nur Objekte, die tatsächlich im Prompt vorgesehen sind (kein unbeabsichtigter Requisiten-Zuwachs wie z.B. ein nicht angeforderter Asthaufen)? Bei mehreren losen/ähnlichen Objekten in einer Szene (Äste, Werkzeug) explizit "no other [Objekt] nearby" ergänzen (siehe `negative-patterns.md`, Kategorie "Objekt-Kontinuität/Persistenz").
 
 ## 6. Veo 3.1 Eignungsprüfung
 - [ ] Clip-Länge entspricht den aktuell verfügbaren Einstellungen und ist so gewählt, dass die Szene innerhalb dieses einen Clips verständlich und visuell umsetzbar ist?

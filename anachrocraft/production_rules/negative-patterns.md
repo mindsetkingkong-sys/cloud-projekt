@@ -39,6 +39,28 @@ wird (siehe `quality-check.md`, Punkt 5).
   jetzt proaktiv in `quality-check.md`, Punkt 4, vor jeder Generierung
   abgefragt, statt erst nach einem Fehler reaktiv korrigiert zu werden.
 
+## Objekt-Kontinuität/Persistenz
+Gilt für **jedes** physische Objekt in der Szene, nicht nur Leifs eigene
+Ausrüstung (siehe dazu auch "Charakter" oben) — z.B. Äste, Werkzeug,
+zukünftiges Baumaterial.
+- **Objekte verschwinden, nachdem sie abgelegt/fallen gelassen wurden** —
+  ein abgelegtes Objekt muss sichtbar irgendwo liegen bleiben oder die Szene
+  nachvollziehbar verlassen, nicht einfach nicht mehr existieren
+- **Objekte ändern Form/Größe ohne Grund** — z.B. ein Ast, der zwischen
+  Frames dicker/länger/anders geformt wird
+- **Objekte teleportieren zwischen Positionen** — Sprung an einen anderen
+  Ort im Bild ohne nachvollziehbare Bewegung dazwischen
+- **Requisiten erscheinen/verschwinden zwischen Frames** — z.B. ein
+  Asthaufen, der nicht im Prompt vorgesehen war und trotzdem auftaucht
+  (siehe `episodes/episode-02-unterstand.md`, Shot 5)
+
+**Prüfen (vor Freigabe eines Videos):**
+- Hat jedes physische Objekt eine durchgehende Existenz über den ganzen Clip?
+- Bleiben in der Hand gehaltene Objekte konsistent, bis sie erkennbar
+  losgelassen werden?
+- Landen fallen gelassene/abgelegte Objekte sichtbar irgendwo, statt zu
+  verschwinden?
+
 ## Kamera
 - **Unlogische Perspektiven** — Blickwinkel passt nicht zur beschriebenen
   Szene/Position
