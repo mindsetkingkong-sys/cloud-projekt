@@ -138,3 +138,17 @@ bestanden:
 
 **Episode 3 Shot-Liste: freigegeben.** Nächster Schritt: Phase 5
 (Bildreferenzen/Nano-Banana-Bildpläne) pro Shot.
+
+## Produktionsstand (laufend aktualisiert)
+
+| Shot | Keyframe | Video | Status |
+|---|---|---|---|
+| 1 | ✅ freigegeben (3. Fassung — Struktur per Ortsreferenz aus Episode 2 korrigiert, Lichtreferenz auf ein helleres/wärmeres Morgen-Bild umgestellt für klare Zeitsprung-Abgrenzung zu Episode 2) | offen | Keyframe fertig, Video noch nicht generiert |
+| 2-10 | offen | offen | noch nicht produziert |
+
+**Learning aus Shot 1 (bereits in den Regeln verankert, hier nur
+angewendet):** Text allein hat die etablierte Stamm-Struktur nicht sicher
+reproduziert — erst die Ortsreferenz aus `nano-banana-workflow.md`, Phase 2
+hat es gelöst. Für alle folgenden Shots dieser Episode, die den Unterstand
+zeigen, von Anfang an mit Bild-Referenz arbeiten statt erst nach einem
+Fehlversuch.
