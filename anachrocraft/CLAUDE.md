@@ -45,7 +45,11 @@ Einzel-Pointen.
    kurze Veo-Clips entsprechend den verfügbaren Einstellungen. Plane jede
    Szene so, dass sie innerhalb eines einzelnen Clips verständlich und
    visuell umsetzbar ist.
-8. **Video generieren** — erst nachdem Phasen 4 und 6 bestanden sind.
+8. **Video generieren** — erst nachdem Phasen 4 und 6 bestanden sind. Nach
+   Freigabe jedes Shots: Produktionsstand in der Episoden-Datei
+   dokumentieren (verpflichtender Schritt 7 in
+   `production_rules/veo-workflow.md`s Ablauf) — ein Shot gilt erst als
+   abgeschlossen, wenn das erfolgt ist.
 9. **Schnitt & Audio** — Zusammenschnitt in CapCut, Sounddesign nach
    `production_rules/audio-design.md`, Ergebnis ist ein fertiges Episoden-Video.
 10. **Ergebnisse analysieren und Learnings speichern** — fertiges Video nach

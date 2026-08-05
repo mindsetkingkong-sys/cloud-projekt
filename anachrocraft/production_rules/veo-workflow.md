@@ -2,7 +2,8 @@
 
 ## Prompt-Struktur (fix für jeden Veo-Prompt)
 
-Jeder Veo-Prompt enthält diese 7 Elemente, in dieser Reihenfolge:
+Jeder Veo-Prompt enthält diese 7 Prompt-Elemente, in dieser Reihenfolge
+(nicht zu verwechseln mit den Schritten im Abschnitt "Ablauf" weiter unten):
 
 1. **Shot Type** — nur die Einstellungsgröße (Shot-Größe) inkl. Perspektive,
    z.B. "Close-up, Eye-level" (siehe `camera-system.md`)
@@ -68,7 +69,7 @@ Bewegungsqualität) durchgeführt. Erst nach diesem Testergebnis wird
 entschieden, ob es dauerhaft in den Standard-Workflow (Schritt 3 oben)
 übernommen wird.
 
-## Ablauf
+## Ablauf (Produktions-Schritte 1-7, nicht zu verwechseln mit den 7 Prompt-Elementen oben)
 
 1. **Shot planen** — aus der Episoden-Shot-Liste (`episodes/`), Shot-Größe +
    Kamerabewegung aus `camera-system.md` wählen.

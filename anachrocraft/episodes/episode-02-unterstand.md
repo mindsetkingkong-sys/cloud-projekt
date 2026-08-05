@@ -132,3 +132,8 @@ Veo-Prompts, damit der Zeitsprung nicht uneindeutig bleibt.
 | 6 | ✅ freigegeben (3. Fassung — zeigt bereits durchtrennte Aststücke statt Wiederholung des Shot-5-Moments, korrigiert von Längsspalt auf Querschnitt) | ✅ freigegeben, **getrimmt auf ~2,5s** — Rohclip hatte eine Shot-Rahmung-Vermischung (siehe `../production_rules/negative-patterns.md`, Beobachtungsliste), der nutzbare Extreme-Close-up-Teil am Ende des Clips erfüllt Länge und Inhalt, wird verwendet statt neu zu generieren | **Final.** |
 | 7 | ✅ freigegeben | ✅ freigegeben | **Final.** Sauber — Grounding/Objekt-Konsistenz aus den vorherigen Fixes hielten durchgehend, keine neuen Funde. |
 | 8-10 | offen | offen | noch nicht produziert |
+
+**Episoden-Status: aktiv, nicht abgeschlossen** (Stand: Shots 1-7 produziert,
+8-10 offen). Der laut `../production_rules/prompt-versioning.md` vorgesehene
+"Finale Prompts"-Abschnitt wird erst ergänzt, wenn die Episode vollständig
+produziert ist — offener Produktionsschritt, kein aktueller Fehler.
