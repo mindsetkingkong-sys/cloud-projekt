@@ -72,13 +72,14 @@ dieser Episode, kein weiterer Zeitsprung innerhalb der Episode.
 **Shot 5** — Journey/Conflict
 - Shot-Größe: Medium Shot / Kamerabewegung: Static / Perspektive: Eye-level
 - Länge: 4-6s
-- Hauptaktion: kniet, beginnt mit Handbohrer-Feuermethode, spürbare Anstrengung
-  *(Hinweis für Phase 6: fixierte kniende Position + repetitive kraftvolle Handbewegung — bei der Prompt-Erstellung gegen die Grounding-Regel aus `../production_rules/veo-workflow.md`, Abschnitt "Positions-/Grounding-Anweisungen" prüfen)*
+- Hauptaktion: kniet, holt Messer und Feuerstahl aus dem Rucksack (siehe
+  `../characters/leif.md`, Abschnitt "Rucksack-Inhalt"), beginnt Funken auf
+  den Zunder zu schlagen (Feuerstahl am Messerrücken)
 
 **Shot 6** — Journey/Conflict
 - Shot-Größe: Extreme Close-up / Kamerabewegung: Static / Perspektive: Low angle
 - Länge: 2-3s
-- Hauptaktion: Detail-Insert, Hände drehen das Bohrholz, erste Rauchfäden steigen auf
+- Hauptaktion: Detail-Insert, Feuerstahl schlägt Funken auf den Zunder, erste Glut/Rauchfäden
 
 **Shot 7** — Journey/Conflict, Rückschlag
 - Shot-Größe: Medium Shot / Kamerabewegung: Static / Perspektive: Eye-level
@@ -88,7 +89,7 @@ dieser Episode, kein weiterer Zeitsprung innerhalb der Episode.
 **Shot 8** — Journey/Conflict, zweiter Versuch
 - Shot-Größe: Medium Shot / Kamerabewegung: Tracking (leicht) / Perspektive: Eye-level
 - Länge: 4-6s
-- Hauptaktion: neuer, entschlossener Anlauf mit trockenerem Material (aus dem geschützten Bereich im/am Unterstand geholt)
+- Hauptaktion: neuer, entschlossener Anlauf mit trockenerem Material (aus dem geschützten Bereich im/am Unterstand geholt), erneut Feuerstahl am Messerrücken
 
 **Shot 9** — Payoff
 - Shot-Größe: Extreme Close-up / Kamerabewegung: Push-in (minimal) / Perspektive: Low angle
@@ -106,9 +107,6 @@ ist real mit ~60-65s zu rechnen — die 60s-Pflicht für Meilenstein-Episoden
 sollte damit erreicht werden, nach der ersten Schnittrunde trotzdem
 verifizieren.
 
-**Offener Punkt vor Phase 4:** neues Element in dieser Episode ist die
-Feuermach-Handlung (Handbohrer-Methode) — kein bestehendes Ausrüstungsteil
-aus `../characters/leif.md` nötig, bewusst ohne neues Kanon-Objekt geplant
-(nur Naturmaterial). Falls du stattdessen eine andere Feuermethode
-(z.B. Feuerstahl am Rücken der Axt) willst, sag Bescheid, bevor wir in
-Phase 4 (Shot-Freigabe) gehen.
+**Feuermethode (geklärt):** Messer + Feuerstahl, beide aus
+`../characters/leif.md`, Abschnitt "Rucksack-Inhalt" — dort auch die
+verbindlichen Visual-Details für beide Objekte.
