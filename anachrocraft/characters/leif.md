@@ -38,6 +38,26 @@ zunehmend abgenutzte Kleidung über die Staffel hinweg, siehe
 Kanon aktualisiert, nicht nur stillschweigend in einzelnen Prompts abweichen
 gelassen.
 
+## Rucksack-Inhalt (situativ, nicht permanent sichtbar)
+
+Zusätzlich zum permanent sichtbaren Rucksack (siehe oben) führt Leif weitere
+Ausrüstung **im geschlossenen Rucksack** mit sich — nicht Teil des Master
+Character Prompt weiter unten, da nicht durchgehend sichtbar. Erscheint nur,
+wenn eine Shot-Handlung das Herausholen/Benutzen explizit zeigt (gleiche
+Logik wie `../production_rules/continuity-rules.md`, Abschnitt "Position
+von Gegenständen").
+
+- **Feuerstahl:** Ferrocerium-Stab mit dunklem Holzgriff, an einer Kordel befestigt
+- **Messer:** kleines Feststehklingen-Messer (Bushcraft-Stil, **nicht klappbar**), dunkler Holzgriff, einfache Lederscheide
+- **Paracord:** mehrere Meter oliv-/khakifarbenes Paracord, kompakt aufgerollt
+- **Schlafsack:** kompakt gerolltes, dunkelgrün-olivfarbenes Bündel, verschnürt — zusätzlich zur bereits außen sichtbaren Schlafmatte, ein getrenntes Objekt
+- **Angel-Set:** kompaktes Taschenangel-Set (kleine Rolle mit Schnur, wenige Haken)
+- **Blechbecher/Kochtopf:** kleiner emaillierter Blechbecher/Topf, verrußt-abgenutzt
+
+Diese Liste ist für künftige Episoden die verbindliche Referenz — neue
+Ausrüstungsteile werden hier ergänzt, nicht ad hoc in einzelnen
+Episoden-Dateien erfunden.
+
 ## Referenzbilder (Master Reference Assets)
 
 - **Ursprungsfoto:** `../assets/reference_images/leif_reference_official_v1.png`
