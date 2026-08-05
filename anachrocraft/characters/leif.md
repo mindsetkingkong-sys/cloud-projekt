@@ -71,8 +71,13 @@ Episoden-Dateien erfunden.
   (Kopf/Schulter-Portrait für Close-ups, Augenfarbe/Bartdetail verifiziert —
   siehe Plan in `../assets/reference_images/leif-face-reference.md`). Geprüft
   und freigegeben nach Zuschnitt des Wasserzeichens.
+- **No-Gear Reference:** `../assets/reference_images/leif_no_gear_reference_v1.png`
+  (neutrale Stehpose, kein Rucksack/keine Axt/keine Gurte sichtbar — für
+  Shots, in denen die Ausrüstung laut Handlung explizit abgelegt ist, siehe
+  Plan in `../assets/reference_images/leif-no-gear-reference.md`). Geprüft
+  und freigegeben.
 
-Alle drei sind ab jetzt die verbindlichen Bild-Referenzen für Nano-Banana-
+Alle vier sind ab jetzt die verbindlichen Bild-Referenzen für Nano-Banana-
 Generierungen (Rollen-Zuweisung siehe
 `../production_rules/nano-banana-workflow.md` Phase 2).
 
