@@ -24,7 +24,7 @@ Auswahl bewährter Kombinationen daraus, kein neues Vokabular.
 - **Zweck:** neuen Gegenstand/Ort/Problem einführen
 - **Passende Situation:** Fund eines Materials, Blick auf Baufortschritt,
   erste Sichtung eines Hindernisses
-- **Kameraidee:** Over-the-shoulder, Reveal-Bewegung, kontrollierter Push
+- **Kameraidee:** Over-the-shoulder, Push-in
 
 ## Survival
 
