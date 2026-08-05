@@ -4,6 +4,10 @@ Wenn ein fertiges Video zur Analyse bereitgestellt wird: zuerst das gesamte
 Video als Ganzes analysieren, danach einzelne Shots. Dieser Workflow dient
 Phase 7 ("Ergebnisse analysieren und Learnings speichern") aus `../CLAUDE.md`.
 
+**Prüfgrenzen und Unsicherheit** gelten hier verbindlich mit — einzige
+Quelle dieser Regel ist `quality-check.md`, Punkt 8, hier nicht dupliziert.
+Konkret betroffen: der Audio-Analyse-Lücke weiter unten in diesem Abschnitt.
+
 ## Technischer Ablauf (Video-Upload + Frame-Extraktion)
 
 Fertige Clips können direkt als Videodatei hochgeladen werden — Frames werden
