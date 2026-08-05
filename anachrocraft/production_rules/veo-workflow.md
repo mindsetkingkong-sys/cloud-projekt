@@ -106,6 +106,13 @@ entschieden, ob es dauerhaft in den Standard-Workflow (Schritt 3 oben)
   Perspektivwechsel ist eingeschlichen
 - Physik wirkt falsch (schwebende Objekte, unlogische Bewegung)
 
+Diese Liste gilt für die Prüfung **vor** der ersten Freigabe eines Shots.
+Für einen bereits als **Approved** markierten Shot gilt danach die
+strengere, engere Schwelle aus `prompt-versioning.md`, Abschnitt "Approved
+Shot Protection" (nur Story-Logik-/Wahrnehmungsschäden rechtfertigen dort
+noch eine Neu-Generierung) — beide Listen ergänzen sich, sie widersprechen
+sich nicht.
+
 **Kein Grund für Neu-Generierung:** das sichtbare Gemini-Wasserzeichen/Icon.
 Es tritt bei praktisch jeder Veo-Generierung auf, wechselnd in Position —
 erneutes Generieren verschiebt es nur, entfernt es nicht. Wird als

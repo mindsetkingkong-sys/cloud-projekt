@@ -49,6 +49,12 @@ Approved sind.
 
 ## Approved Shot Protection
 
+Setzt voraus, dass der Shot bereits die harten Kriterien aus
+`veo-workflow.md`, Abschnitt "Wann ein Shot neu generiert werden muss"
+bestanden hat (Ausrüstung, Licht/Tageszeit, Handlung, Physik) — diese Liste
+hier ist die zusätzliche, strengere Schwelle **nach** der Freigabe, nicht
+ein Ersatz dafür.
+
 Sobald ein Shot alle vier Kriterien besteht —
 - Charakterkonsistenz
 - Bewegungsqualität
