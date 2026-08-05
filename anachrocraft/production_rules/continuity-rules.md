@@ -26,6 +26,31 @@ Hauptwald). Bei Fortschritt der Hütte: neue Beschreibung als neue,
 versionierte Variante anlegen (v1 Fundament, v2 Wände, ...), alte Version
 nicht überschreiben.
 
+### Environment-Continuity-Check (verbindlich, einzige Quelle dieser Regel)
+
+Bevor die Environment-Beschreibung eines Shots festgeschrieben wird: mit dem
+**unmittelbar vorherigen Shot derselben Location** abgleichen, mindestens in
+diesen sechs Dimensionen:
+
+1. Bodentyp
+2. Vegetation
+3. markante Objekte
+4. Wetter
+5. Licht/Tageszeit
+6. Geländeform
+
+Eine Abweichung in einer dieser Dimensionen gegenüber dem vorherigen Shot
+derselben Location ist nur zulässig, wenn sie durch die Story (z.B. Zeitsprung,
+siehe `lighting-rules.md`) oder einen tatsächlichen Ortswechsel begründet ist
+— nicht als unbemerkte Nebenfolge einer neu formulierten Environment-Zeile.
+Findet dieser Vergleich nicht statt, ist das genau der Fehlertyp aus
+`negative-patterns.md` (Boden-Typ-Bruch, Episode 2 Shot 6), der so verhindert
+werden soll.
+
+**Prüfzeitpunkt:** wird während `shot-approval.md`, Punkt 4 ("Visual
+Continuity") durchgeführt — dort verbindlich verankert, hier nicht
+dupliziert wiederholt.
+
 ## Verletzungen / Schmutz / Kleidungszustand
 Der Zustand von Leif (sauber vs. verschmutzt, unverletzt vs. verletzt,
 Kleidung intakt vs. abgenutzt) ist Teil des Story-Fortschritts und muss

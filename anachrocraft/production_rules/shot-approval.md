@@ -29,6 +29,11 @@ finale Prompts eine Stufe später), ersetzt es nicht.
 - Sind Umgebung, Wetter, Licht und Tageszeit über alle Shots hinweg
   konsistent (siehe `continuity-rules.md`, `lighting-rules.md`)?
 - Gibt es Konflikte mit der Episoden-Lighting-Regel?
+- **Environment-Continuity-Check (verbindlich):** für jeden Shot mit
+  derselben Location wie sein unmittelbarer Vorgänger-Shot den vollständigen
+  Abgleich aus `continuity-rules.md`, Abschnitt "Environment-Continuity-Check"
+  durchführen. Unbegründete Abweichungen blockieren die Freigabe dieses
+  Shots, bis sie korrigiert oder als Story-/Ortswechsel begründet sind.
 
 ## 5. Veo Feasibility
 
