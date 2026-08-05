@@ -28,6 +28,18 @@ Einzel-Pointen.
 - `episodes/` — Shot-Listen pro Episode
 - `assets/reference_images/` — kanonische Referenzbilder für Charakterkonsistenz
 
+## Konfliktregel zwischen Regel-Dateien
+
+Bei scheinbar widersprüchlichen Aussagen zweier Dateien zum selben Thema
+gilt: die Datei, die für dieses Thema explizit als "einzige Quelle" /
+"verbindlich" gekennzeichnet ist (z.B. Environment-Continuity-Check in
+`continuity-rules.md`, die Fehler-Datenbank in `negative-patterns.md`,
+Tageszeit/Wetter-Definition in `lighting-rules.md`), hat Vorrang. Andere
+Dateien dürfen ein solches Thema nur referenzieren, nie abweichend neu
+definieren. Existiert für ein Thema keine derartige Kennzeichnung, gilt der
+Widerspruch als ungeklärte Lücke — nicht raten, sondern dem Nutzer zur
+Entscheidung vorlegen.
+
 ## Workflow (11 Phasen)
 
 1. **Story analysieren** — Bogen/Kontext aus `production_rules/story-structure.md`.
