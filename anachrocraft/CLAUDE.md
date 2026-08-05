@@ -18,9 +18,12 @@ Einzel-Pointen.
 ## Ordnerstruktur
 
 - `characters/` — Charakter-Bibeln (Aussehen, Master-Prompts, Referenzbild-Regeln)
-- `production_rules/` — feste technische und kreative Produktionsregeln
-  (Kamera-System, Nano-Banana-Workflow, Veo-Workflow, Kapazitäts-/Kadenz-Strategie,
-  Story-Struktur, Video-Review, Audio-Design, Prompt-Versionierung)
+- `production_rules/` — feste technische und kreative Produktionsregeln:
+  `camera-system.md`, `nano-banana-workflow.md`, `veo-workflow.md`,
+  `capacity-and-cadence.md`, `story-structure.md`, `video-review-workflow.md`,
+  `audio-design.md`, `prompt-versioning.md`, `shot-approval.md`,
+  `quality-check.md`, `continuity-rules.md`, `lighting-rules.md`,
+  `negative-patterns.md`, `channel-strategy.md`, `compliance.md`
 - `shot_library/` — bewährte, wiederverwendbare Kamera-Shot-Vorlagen
 - `episodes/` — Shot-Listen pro Episode
 - `assets/reference_images/` — kanonische Referenzbilder für Charakterkonsistenz
