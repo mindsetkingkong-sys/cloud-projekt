@@ -30,5 +30,5 @@ Auswahl bewährter Kombinationen daraus, kein neues Vokabular.
 
 - **Zweck:** Handwerk/Arbeit/Alltag glaubwürdig zeigen
 - **Passende Situation:** Bauen, Feuer machen, Werkzeugarbeit
-- **Kameraidee:** Handheld-Dokumentarstil, realistische Bewegung,
-  Umgebung als Teil der Erzählung (Environmental Storytelling)
+- **Kameraidee:** Tracking, nah an der Handlung, Umgebung als Teil der
+  Erzählung (Environmental Storytelling)
