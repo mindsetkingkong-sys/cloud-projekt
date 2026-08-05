@@ -41,6 +41,13 @@ Versionierte Prompts werden direkt in der jeweiligen Episoden-Datei
 ID-Schreibweise oben dokumentiert — kein separater Speicherort, damit Shot,
 Prüfung und Prompt-Historie an einer Stelle bleiben.
 
+**Zeitpunkt:** dieser Abschnitt wird erst ergänzt, wenn die Episode
+**vollständig produziert** ist (alle Shots laut Produktionsstand-Tabelle,
+siehe `veo-workflow.md` Schritt 7, auf "Final"/bestanden stehen) — nicht
+schon nach jedem einzelnen Shot, damit dort nicht wechselnde
+Zwischenversionen aus laufender Iteration landen. Dokumentiert werden nur
+die tatsächlich finalen, freigegebenen Prompt-Fassungen jedes Shots.
+
 ## Regel
 
 Nur **Approved**-Prompts gelten als Referenz für neue Episoden. Draft/Tested
