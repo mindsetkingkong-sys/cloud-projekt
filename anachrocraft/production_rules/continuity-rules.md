@@ -5,13 +5,15 @@ Jeder Shot wird unabhängig generiert — Kontinuität entsteht nur, wenn sie
 explizit in jedem Prompt wiederholt wird, nicht von selbst.
 
 ## Tageszeit
-Pro Episode (oder Szenenblock innerhalb einer Episode) wird die Tageszeit
-**einmal festgelegt** und in jedem Shot-Prompt dieser Episode wortgleich
-wiederholt (z.B. "early morning, low sun"). Nicht pro Shot neu erfinden.
+Definition und Festlegung des Werts: siehe `lighting-rules.md`, Abschnitt
+"Tageszeit". Kontinuitäts-Pflicht (Aufgabe dieser Datei): der einmal
+festgelegte Wert wird in jedem Shot-Prompt derselben Episode wortgleich
+wiederholt, nicht pro Shot neu erfunden.
 
 ## Wetter
-Gleiche Regel wie Tageszeit: einmal pro Episode fixieren (z.B. "overcast,
-light mist"), in allen Shots dieser Episode identisch übernehmen.
+Gleiche Kontinuitäts-Pflicht wie Tageszeit: Definition siehe
+`lighting-rules.md`, Abschnitt "Wetter"; einmal pro Episode fixiert, in
+allen Shots dieser Episode identisch übernommen.
 
 ## Lichtstimmung
 Sonnenrichtung und Farbtemperatur werden als Teil des Tageszeit-Werts mit

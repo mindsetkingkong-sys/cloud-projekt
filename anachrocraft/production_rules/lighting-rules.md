@@ -11,8 +11,10 @@ außer die Story springt bewusst in der Zeit (siehe `continuity-rules.md`).
 - **Farbtemperatur:** an Tageszeit gekoppelt — kühl/blau für früh
   morgens/Dämmerung, warm/golden für späten Nachmittag/Abend, neutral für
   Mittag bei Bewölkung. Ein Wert pro Episode, nicht pro Shot.
-- **Wetter:** einmal pro Episode fix (siehe `continuity-rules.md`), da Wetter
-  auch die Lichtqualität bestimmt (diffus bei Bewölkung, hart bei Sonne).
+- **Wetter:** einmal pro Episode fix, da Wetter auch die Lichtqualität
+  bestimmt (diffus bei Bewölkung, hart bei Sonne). Pflicht zur wortgleichen
+  Wiederholung in jedem Shot-Prompt: siehe `continuity-rules.md`, Abschnitt
+  "Wetter".
 - **Atmosphäre:** Nebel/Dunst nur, wenn zur festgelegten Tageszeit/zum Wetter
   passend (z.B. Bodennebel ist morgens plausibel, nicht bei praller
   Mittagssonne).
