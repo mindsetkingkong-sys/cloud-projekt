@@ -26,12 +26,29 @@ Hauptwald). Bei Fortschritt der Hütte: neue Beschreibung als neue,
 versionierte Variante anlegen (v1 Fundament, v2 Wände, ...), alte Version
 nicht überschreiben.
 
-**Konkretisierung (aus Praxisfehler, Episode 2 Shot 7/8):** bei Bau-Fortschritt
-reicht "neue Version" nicht als Beschreibung — die **Menge/Dichte** der
-sichtbaren Baumaterialien muss explizit beziffert werden (z.B. "only 3-4
-branches placed, sparse" vs. "dense, fully woven frame"), sonst zeigen
-aufeinanderfolgende Shots zufällig ähnlich viel Fortschritt statt einer
-erkennbaren Steigerung.
+**Konkretisierung (aus Praxisfehler, Episode 2 Shot 6/7/8):** bei
+Bau-Fortschritt reicht "neue Version" nicht als Beschreibung — die
+**Menge/Dichte** der sichtbaren Baumaterialien muss explizit beziffert
+werden (z.B. "only 3-4 branches placed, sparse" vs. "dense, fully woven
+frame"). Mengenangaben dienen dabei nur als Orientierung für das Modell —
+das eigentliche Ziel ist, dass der Baufortschritt für den Zuschauer **auf
+den ersten Blick eindeutig erkennbar** ist, ohne die Shot-Beschreibung zu
+kennen.
+
+Baufortschritt und Lichtentwicklung müssen bei aufeinanderfolgenden Shots
+**gemeinsam** geprüft werden, nicht getrennt — ein mittlerer Shot darf
+weder den Bauzustand noch die Lichtstimmung des nachfolgenden Shots
+vorwegnehmen (Fund: Shot 7 zeigte sowohl Baufortschritt als auch
+Lichtstimmung fast auf Shot-8-Niveau, obwohl er direkt nach Shot 6 spielt
+und damit klar davor liegen muss). Die Helligkeit/Farbstimmung muss ebenso
+logisch zwischen dem vorherigen und dem folgenden Shot liegen wie der
+Bauzustand.
+
+**Prüffrage vor Freigabe (Teil dieser Regel, in `quality-check.md`
+anzuwenden):** Würde ein Zuschauer allein anhand der Bilder die Reihenfolge
+der Shots (z.B. Shot 6 → Shot 7 → Shot 8) korrekt erkennen — sowohl am
+Baufortschritt als auch an der Lichtstimmung? Falls nicht eindeutig: der
+Shot gilt als nicht freigabereif.
 
 ### Environment-Continuity-Check (verbindlich, einzige Quelle dieser Regel)
 
