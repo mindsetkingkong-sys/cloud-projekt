@@ -13,8 +13,16 @@ Episode 2 zu Beginn, danach neuer, eigenständiger Konflikt.
 ## Hook
 
 Der Unterstand steht noch im Morgenlicht — der Windstoß/Knacken aus Episode 2
-hat ihn nicht zerstört. Direkt danach neue Dringlichkeit: Kälte der Nacht ist
-spürbar, Feuer wird zum nächsten dringenden Bedürfnis.
+hat ihn nicht zerstört. Die Nacht selbst wird nicht gezeigt (bewusster
+Zeitsprung zwischen den Episoden, siehe `../production_rules/story-structure.md`)
+— der Cliffhanger wird allein durch das Ergebnis aufgelöst.
+
+**Logik-Klarstellung:** Leif hatte nach Fertigstellung des Unterstands in
+Episode 2 keine Zeit mehr, vor Einbruch der Dunkelheit auch noch ein Feuer
+zu machen — er hat die erste Nacht fröstelnd, ohne Feuer, verbracht. Das
+begründet die spürbare Kälte/den sichtbaren Atem in Shot 2 (nicht nur
+"kalter Morgen", sondern Folge einer feuerlosen Nacht) und macht Feuer zum
+sofortigen, dringenden Bedürfnis.
 
 ## Emotion
 
@@ -58,6 +66,11 @@ dieser Episode, kein weiterer Zeitsprung innerhalb der Episode.
 - Shot-Größe: Medium Shot / Kamerabewegung: Push-in (langsam) / Perspektive: Eye-level
 - Länge: 4-6s
 - Hauptaktion: Leif tritt aus dem Unterstand, fröstelt sichtbar, Atem in der kalten Luft sichtbar
+  *(Gegenstands-Logik, Abweichung vom Standardzustand aus `../characters/leif.md`,
+  begründet nach `../production_rules/continuity-rules.md`, "Position von
+  Gegenständen": Rucksack und Axt liegen abgelegt im/am Unterstand, nicht
+  getragen — er hat ein festes Lager, kein Grund, sie zu tragen. Leif tritt
+  mit leeren Händen heraus.)*
 
 **Shot 3** — Setup
 - Shot-Größe: Medium Shot / Kamerabewegung: Tracking / Perspektive: Eye-level
