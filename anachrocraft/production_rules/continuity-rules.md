@@ -26,6 +26,13 @@ Hauptwald). Bei Fortschritt der Hütte: neue Beschreibung als neue,
 versionierte Variante anlegen (v1 Fundament, v2 Wände, ...), alte Version
 nicht überschreiben.
 
+**Konkretisierung (aus Praxisfehler, Episode 2 Shot 7/8):** bei Bau-Fortschritt
+reicht "neue Version" nicht als Beschreibung — die **Menge/Dichte** der
+sichtbaren Baumaterialien muss explizit beziffert werden (z.B. "only 3-4
+branches placed, sparse" vs. "dense, fully woven frame"), sonst zeigen
+aufeinanderfolgende Shots zufällig ähnlich viel Fortschritt statt einer
+erkennbaren Steigerung.
+
 ### Environment-Continuity-Check (verbindlich, einzige Quelle dieser Regel)
 
 Bevor die Environment-Beschreibung eines Shots festgeschrieben wird: mit dem

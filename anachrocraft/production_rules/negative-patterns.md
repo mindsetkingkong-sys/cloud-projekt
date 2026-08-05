@@ -109,6 +109,24 @@ Veo ein Objekt, das nirgends angefordert war".
   keiner dieser drei Quellen zuzuordnen ist, gilt als Fehler, unabhängig
   davon, ob es "harmlos" aussieht.
 
+## Belichtungs-Überkorrektur
+- **Fehler:** beim Korrigieren einer falschen Belichtung schießt die nächste
+  Generierung über das Ziel hinaus in die entgegengesetzte Richtung (z.B. zu
+  dunkel → nächster Versuch zu hell), statt die Zielbelichtung direkt zu
+  treffen.
+- **Ursache:** die Korrektur-Anweisung beschreibt meist nur "heller" oder
+  "dunkler" ohne konkreten Vergleichspunkt — das Modell übertreibt die
+  Korrektur, statt eine bestimmte Zielstufe zu treffen.
+- **Lösung:** Belichtung nicht relativ ("heller als vorher") korrigieren,
+  sondern mit einem konkreten Referenzbild und der Formulierung "matching
+  the reference image exactly, not overexposed, not underexposed" anfordern
+  — direkt auf den Zielwert zielen, nicht schrittweise über- oder
+  unterkorrigieren.
+- **Neue Regel:** bei jeder Belichtungskorrektur ein bestätigtes
+  Referenzbild mit korrekter Belichtung explizit benennen und exakten
+  Abgleich fordern, nicht nur eine Richtung ("heller"/"dunkler") angeben.
+  (Fund aus `episodes/episode-02-unterstand.md`, Shot 7, 2. Neu-Generierung.)
+
 ## Kamera
 - **Unlogische Perspektiven** — Blickwinkel passt nicht zur beschriebenen
   Szene/Position
