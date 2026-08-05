@@ -19,6 +19,18 @@ Jeder Veo-Prompt enthält diese 7 Prompt-Elemente, in dieser Reihenfolge
 Grundregeln: klare Hauptidee pro Shot, Szene nicht überladen, Kamera und
 Bewegung physikalisch logisch, Charakterkonsistenz erhalten.
 
+## Finaler Prompt (Ausgabeformat, verbindlich)
+
+Der finale, an Veo übergebene Prompt-Block beginnt mit einer expliziten
+Referenzbild-Anweisung (welches Keyframe als Ausgangsbild dient und wie
+es zu verwenden ist, z.B. "animate exactly as shown, do not alter
+composition") — erst danach folgen die 7 Prompt-Elemente oben. Der Block
+enthält ausschließlich Informationen, die direkt an Veo übergeben werden
+können — keine internen Workflow-Kommentare, Prüfhinweise oder Verweise auf
+Regel-Dateien. Gleiches Trennungsprinzip (interne Doku vs. Generator-Prompt)
+wie in `nano-banana-workflow.md`, Abschnitt "Finaler Prompt (Ausgabeformat,
+verbindlich)" — hier nicht erneut ausgeführt.
+
 ## Positions-/Grounding-Anweisungen (Regel, ✅ bestätigt durch erfolgreiche Neu-Generierung)
 
 **Wann diese Regel greift (Trigger):** immer, wenn ein Shot eine fixierte

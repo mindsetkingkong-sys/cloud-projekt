@@ -72,3 +72,19 @@ nicht besser.
   generiert werden muss").
 - Erst dann als Asset-Referenzbild in Veo verwenden (siehe
   `veo-workflow.md`).
+
+## Finaler Prompt (Ausgabeformat, verbindlich)
+
+Der an den Nutzer gelieferte, copy-paste-fertige Prompt ist strikt getrennt
+von interner Produktionsdokumentation (Statusnotizen, Prüfhinweise,
+Verweise auf Regel-Dateien) — diese gehören in den Chat-Text oder die
+Episoden-Datei, nie in den Prompt-Block selbst. Der finale Prompt-Block
+muss immer explizit benennen:
+- welche Referenzbilder verwendet werden (oder ausdrücklich: keine, falls
+  kein Charakter/Objekt im Shot vorkommt, das ein Referenzbild braucht)
+- wofür jedes Referenzbild dient (Rolle — siehe Phase 2 oben: Charakter,
+  Kleidung/Ausrüstung, Stil, Ortsreferenz)
+
+Gilt auch für den optionalen Ortsreferenz-Fall aus Phase 2 oben (exakte
+Wiederverwendung einer Location) — die Rollenbenennung steht dann im
+Prompt-Block selbst, nicht nur als Randbemerkung im Chat.
