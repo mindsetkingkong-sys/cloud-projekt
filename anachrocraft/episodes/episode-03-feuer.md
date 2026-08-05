@@ -110,3 +110,31 @@ verifizieren.
 **Feuermethode (geklärt):** Messer + Feuerstahl, beide aus
 `../characters/leif.md`, Abschnitt "Rucksack-Inhalt" — dort auch die
 verbindlichen Visual-Details für beide Objekte.
+
+## Shot-Freigabe (Phase 4, bestanden)
+
+Geprüft gegen `../production_rules/shot-approval.md`, alle 5 Punkte
+bestanden:
+
+1. **Character Consistency:** Leif fehlt nur in Shot 1 (Establishing) —
+   logisch, gleiches Muster wie Episode 1 Shot 2 und Episode 2 Shot 2
+   (Establishing Shots ohne Charakter sind in dieser Serie bereits
+   etabliert).
+2. **Story Purpose:** jeder Shot treibt entweder die Cliffhanger-Auflösung
+   oder den Feuer-Konflikt voran, keine dekorativen Shots.
+3. **Retention:** durchgehender Spannungsbogen (Erleichterung → Frustration
+   → Stolz → neue Anspannung durch Rauch).
+4. **Visual Continuity:** Zeitsprung zwischen Episode-2-Ende (Dämmerung) und
+   Episode-3-Start (früher Morgen) ist ein legitimer, story-begründeter
+   Zeitsprung zwischen Episoden (siehe `../production_rules/lighting-rules.md`).
+   Innerhalb der Episode bleibt Tageszeit fix, keine weiteren Sprünge. Selbe
+   Location (Fluss/Unterstand) durchgehend — Environment-Continuity-Check
+   aus `../production_rules/continuity-rules.md` bei der Prompt-Erstellung
+   pro Shot weiterhin verbindlich.
+5. **Veo Feasibility:** alle Längen aus der Clip-Längen-Tabelle in
+   `../production_rules/camera-system.md` übernommen, jeweils eine
+   dominante Hauptaktion pro Shot, keine Perspektivwechsel innerhalb eines
+   Shots.
+
+**Episode 3 Shot-Liste: freigegeben.** Nächster Schritt: Phase 5
+(Bildreferenzen/Nano-Banana-Bildpläne) pro Shot.
