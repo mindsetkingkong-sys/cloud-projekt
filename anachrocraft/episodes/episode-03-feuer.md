@@ -143,7 +143,7 @@ bestanden:
 
 | Shot | Keyframe | Video | Status |
 |---|---|---|---|
-| 1 | ✅ freigegeben (3. Fassung — Struktur per Ortsreferenz aus Episode 2 korrigiert, Lichtreferenz auf ein helleres/wärmeres Morgen-Bild umgestellt für klare Zeitsprung-Abgrenzung zu Episode 2) | offen | Keyframe fertig, Video noch nicht generiert |
+| 1 | ✅ freigegeben (3. Fassung — Struktur per Ortsreferenz aus Episode 2 korrigiert, Lichtreferenz auf ein helleres/wärmeres Morgen-Bild umgestellt für klare Zeitsprung-Abgrenzung zu Episode 2) | ✅ freigegeben (2. Fassung — Main Action präzisiert: Struktur explizit als starrer, unveränderlicher Zielzustand beschrieben statt vager erlaubter Nebenbewegung; behebt Struktur-Drift/Kamera-Perspektivverschiebung aus der 1. Fassung), generiert mit 10s statt angeforderter 8s (bekanntes Veo-Verhalten, beim Schnitt trimmen) | **Final.** |
 | 2-10 | offen | offen | noch nicht produziert |
 
 **Learning aus Shot 1 (bereits in den Regeln verankert, hier nur
@@ -152,3 +152,11 @@ reproduziert — erst die Ortsreferenz aus `nano-banana-workflow.md`, Phase 2
 hat es gelöst. Für alle folgenden Shots dieser Episode, die den Unterstand
 zeigen, von Anfang an mit Bild-Referenz arbeiten statt erst nach einem
 Fehlversuch.
+
+**Zweites Learning aus Shot 1 (Video, 1. Fassung):** bei Static-Shots mit
+erlaubter kleiner Nebenbewegung (hier: Nebel) kann sich der Spielraum
+unbeabsichtigt auf die eigentlich unveränderliche Hauptstruktur ausweiten,
+begleitet von leichter Kamera-Perspektivverschiebung trotz "Static"-Vorgabe.
+Gelöst durch explizite, positiv formulierte Zielzustand-Beschreibung der
+Struktur in der Main Action. Bewusst als Einzelfall/Prompt-Optimierung
+behandelt, nicht als neue Regel dokumentiert (Nutzer-Entscheidung).
