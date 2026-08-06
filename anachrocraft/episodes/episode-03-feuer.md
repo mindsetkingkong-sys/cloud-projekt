@@ -157,7 +157,7 @@ bestanden:
 | Shot | Keyframe | Video | Status |
 |---|---|---|---|
 | 1 | ✅ freigegeben (3. Fassung — Struktur per Ortsreferenz aus Episode 2 korrigiert, Lichtreferenz auf ein helleres/wärmeres Morgen-Bild umgestellt für klare Zeitsprung-Abgrenzung zu Episode 2) | ✅ freigegeben (2. Fassung — Main Action präzisiert: Struktur explizit als starrer, unveränderlicher Zielzustand beschrieben statt vager erlaubter Nebenbewegung; behebt Struktur-Drift/Kamera-Perspektivverschiebung aus der 1. Fassung), generiert mit 10s statt angeforderter 8s (bekanntes Veo-Verhalten, beim Schnitt trimmen) | **Final.** |
-| 2 | ✅ freigegeben (3. Fassung — Rucksack/Axt-Verdopplung behoben durch neues No-Gear-Referenzbild statt Text-Anweisung, Gesichtsschärfe korrigiert) | offen | Keyframe fertig, Video noch nicht generiert |
+| 2 | ✅ freigegeben (4. Fassung — Rucksack/Axt nach zwei fehlgeschlagenen Video-Versuchen (Objekt materialisiert erst nach Start-Frame, Griff-Farbe weicht vom Kanon ab) bewusst komplett aus dem Shot entfernt, Keyframe entsprechend ohne jedes Gepäck neu erstellt) | offen | Keyframe fertig, Video noch nicht generiert |
 | 3-10 | offen | offen | noch nicht produziert |
 
 **Learning aus Shot 1 (bereits in den Regeln verankert, hier nur
