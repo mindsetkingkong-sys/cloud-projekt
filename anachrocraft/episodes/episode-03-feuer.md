@@ -158,7 +158,8 @@ bestanden:
 |---|---|---|---|
 | 1 | ✅ freigegeben (3. Fassung — Struktur per Ortsreferenz aus Episode 2 korrigiert, Lichtreferenz auf ein helleres/wärmeres Morgen-Bild umgestellt für klare Zeitsprung-Abgrenzung zu Episode 2) | ✅ freigegeben (2. Fassung — Main Action präzisiert: Struktur explizit als starrer, unveränderlicher Zielzustand beschrieben statt vager erlaubter Nebenbewegung; behebt Struktur-Drift/Kamera-Perspektivverschiebung aus der 1. Fassung), generiert mit 10s statt angeforderter 8s (bekanntes Veo-Verhalten, beim Schnitt trimmen) | **Final.** |
 | 2 | ✅ freigegeben (4. Fassung — Rucksack/Axt nach zwei fehlgeschlagenen Video-Versuchen (Objekt materialisiert erst nach Start-Frame, Griff-Farbe weicht vom Kanon ab) bewusst komplett aus dem Shot entfernt, Keyframe entsprechend ohne jedes Gepäck neu erstellt) | ✅ freigegeben (3. Fassung, ohne Rucksack/Axt) | **Final.** |
-| 3-10 | offen | offen | noch nicht produziert |
+| 3 | ✅ freigegeben (2. Fassung — Nebel-Kontinuitätsbruch behoben: Prompt hatte "mist through the trees" statt wie in Shot 1/2 "mist over the water" verankert, dadurch komplette Szene vernebelt; korrigiert auf denselben Nebel-Wert wie die Vorshots) | offen | Keyframe fertig, Video noch nicht generiert |
+| 4-10 | offen | offen | noch nicht produziert |
 
 **Learning aus Shot 1 (bereits in den Regeln verankert, hier nur
 angewendet):** Text allein hat die etablierte Stamm-Struktur nicht sicher
