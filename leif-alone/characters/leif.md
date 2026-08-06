@@ -8,7 +8,7 @@ errichten, bevor der erste Winter kommt (Staffel-1-Spannungsbogen).
 
 ## Kanonisches Aussehen (konstant innerhalb einer Episode)
 
-- **Alter:** 28 Jahre *(aktualisiert; vorheriger Wert "Ende 30/Anfang 40" ist veraltet — Begründung: passt besser zum geplanten AnachroCraft-Konzept und zur langfristigen Charakterentwicklung über die Staffel)*
+- **Alter:** 28 Jahre *(aktualisiert; vorheriger Wert "Ende 30/Anfang 40" ist veraltet — Begründung: passt besser zum geplanten Leif-Alone-Konzept und zur langfristigen Charakterentwicklung über die Staffel)*
 - **Statur:** groß, breite Schultern, athletisch-durchtrainiert
 - **Gesicht:** markantes Kinn, wettergegerbte Haut, ausgeprägte Brauen, ruhiger,
   stoischer Ausdruck, eisblau-graue Augen

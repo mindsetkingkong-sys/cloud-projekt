@@ -1,4 +1,4 @@
-# AnachroCraft — AI Cinematic Production System
+# Leif Alone — AI Cinematic Production System
 
 Dieses Verzeichnis ist ein eigenständiges Content-Produktionssystem, unabhängig vom
 Grilluxe-Küchenkonfigurator im Rest dieses Repos. Es dient der Produktion einer
